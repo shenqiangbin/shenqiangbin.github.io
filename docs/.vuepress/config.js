@@ -45,10 +45,14 @@
             }
         ],
         sidebar: {
-            '/bigdata/flume/': [ 
+            '/bigdata/flume': [ 
                 {
-                    text: 'Guide',
-                    children: ['/bigdata/flume/intro.md','/bigdata/flume/reference.md']                
+                    text: 'Flume',
+                    children: [
+                        '/bigdata/flume/intro.md',
+                        '/bigdata/flume/install.md',
+                        '/bigdata/flume/reference.md'
+                    ]                
                 }                
             ]
         }
