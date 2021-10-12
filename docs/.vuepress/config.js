@@ -3,8 +3,8 @@
      title: 'SQBER',
      description: '个人站点',
      themeConfig: {
-         logo: '/imgs/logo.png',
-         navbar: [
+        logo: '/imgs/logo.png',
+        navbar: [
             // NavbarItem
             {
               text: 'Java',
@@ -31,8 +31,8 @@
                     text: '数据采集',
                     children:[
                         {
-                            text: 'flume',
-                            link: '/bigdata/flume/intro.md'
+                            text: 'Flume',
+                            link: '/bigdata/flume'
                         }
                     ]
                 }
@@ -43,6 +43,14 @@
                 text: '关于我',
                 link: '/foo/',
             }
-          ],
+        ],
+        sidebar: {
+            '/bigdata/flume/': [ 
+                {
+                    text: 'Guide',
+                    children: ['/bigdata/flume/intro.md','/bigdata/flume/reference.md']                
+                }                
+            ]
+        }
      }
  }
