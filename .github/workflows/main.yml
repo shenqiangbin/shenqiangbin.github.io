@@ -40,8 +40,17 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        #uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses:  crazy-max/ghaction-github-pages@v2
+        # with:
+        #   GITHUB_TOKEN: ${{ secrets.VUEPRESSTOKEN }}
+        #   BRANCH: gh-pages # The branch the action should deploy to.
+        #   FOLDER: docs/.vuepress/dist # The folder the action should deploy.
         with:
+          # 部署到 gh-pages 分支
+          target_branch: gh-pages
+          # 部署目录为 VuePress 的默认输出目录
+          build_dir: docs/.vuepress/dist
+        env:
+          # @see https://docs.github.com/cn/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
           GITHUB_TOKEN: ${{ secrets.VUEPRESSTOKEN }}
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: docs/.vuepress/dist # The folder the action should deploy.
