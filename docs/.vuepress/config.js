@@ -33,11 +33,36 @@
                         {
                             text: 'Flume',
                             link: '/bigdata/flume'
-                        }
+                        },
                     ]
                 }
             
               ],
+            },
+            {
+                text: '部署',
+                collapsable: false,
+                children: [
+                  {
+                      text: 'FTP',
+                      children:[
+                        {
+                            text: 'Flume',
+                            link: '/soft/centos-ftp.md'
+                        },
+                    ]
+                  }
+                ],
+            },
+            {
+                text: '生活',
+                collapsable: false,
+                children: [
+                  {
+                      text: '菜谱',
+                      link: '/life/recipe.md'
+                  }
+                ],
             },
             {
                 text: '关于我',
@@ -55,7 +80,8 @@
                         '/bigdata/flume/ftp2hdfs.md',
                     ]                
                 }                
-            ]
+            ],
+
         }
      }
  }
