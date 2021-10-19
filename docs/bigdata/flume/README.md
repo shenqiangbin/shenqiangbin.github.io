@@ -8,3 +8,4 @@
 
 - [介绍](./intro.md)
 - [参照](./reference.md)
+- [采集 FTP 目录的数据到 HDFS](./ftp2hdfs.md)

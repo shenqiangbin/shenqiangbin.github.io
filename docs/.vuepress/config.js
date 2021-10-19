@@ -51,7 +51,8 @@
                     children: [
                         '/bigdata/flume/intro.md',
                         '/bigdata/flume/install.md',
-                        '/bigdata/flume/reference.md'
+                        '/bigdata/flume/reference.md',
+                        '/bigdata/flume/ftp2hdfs.md',
                     ]                
                 }                
             ]
