@@ -8,7 +8,18 @@
             // NavbarItem
             {
               text: 'Java',
-              link: '/foo/',
+              collapsable: false,
+              children: [
+                  {
+                      text: 'Maven',
+                      children:[
+                        {
+                            text: '构建多模块项目',
+                            link: '/java/create-project'
+                        },
+                    ]
+                  }
+              ]
             },
             // NavbarGroup
             {
