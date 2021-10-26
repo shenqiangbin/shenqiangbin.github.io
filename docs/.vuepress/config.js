@@ -44,10 +44,10 @@
                 collapsable: false,
                 children: [
                   {
-                      text: 'FTP',
+                      text: '其他',
                       children:[
                         {
-                            text: 'Flume',
+                            text: 'FTP',
                             link: '/soft/centos-ftp.md'
                         },
                     ]
