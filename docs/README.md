@@ -25,4 +25,11 @@ heroImage: /imgs/logo.png
 footer: Powered by VuePress | Copyright © 2018-present SQBER
 ---
 
-# Hello baby.
+- ✅ IDEA 相关
+
+
+TODO:
+
+- 快速复制模块
+- 数据访问 - JDBC
+

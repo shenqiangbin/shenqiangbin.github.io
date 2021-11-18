@@ -17,10 +17,33 @@
                             text: '构建多模块项目',
                             link: '/java/create-project'
                         },
+                        {
+                            text: 'nacos',
+                            link: '/java/nacos'
+                        },
+                        {
+                            text: 'IDEA',
+                            link: '/java/idea'
+                        }
                     ]
                   }
               ]
             },
+            {
+                text: 'Linux',
+                collapsable: false,
+                children: [
+                    {
+                        text: '基础',
+                        children:[
+                          {
+                              text: '文件上传和下载',
+                              link: '/linux/file-upload-download'
+                          },
+                      ]
+                    }
+                ]
+              },
             // NavbarGroup
             {
               text: '大数据',
@@ -55,10 +78,10 @@
                 collapsable: false,
                 children: [
                   {
-                      text: 'FTP',
+                      text: '其它',
                       children:[
                         {
-                            text: 'Flume',
+                            text: 'FTP',
                             link: '/soft/centos-ftp.md'
                         },
                     ]
