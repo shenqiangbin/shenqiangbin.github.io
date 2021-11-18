@@ -5,7 +5,10 @@
      themeConfig: {
         logo: '/imgs/logo.png',
         navbar: [
-            // NavbarItem
+            {
+                text: '习惯',
+                link: '/convention',
+            },
             {
               text: 'Java',
               collapsable: false,
@@ -115,6 +118,15 @@
                     ]                
                 }                
             ],
+            '/convention':[
+                {
+                    text: '习惯',
+                    children: [
+                        '/convention/log.md',
+                        '/convention/simpleCode.md'
+                    ]
+                }
+            ]
 
         }
      }
