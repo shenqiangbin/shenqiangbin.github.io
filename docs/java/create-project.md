@@ -72,3 +72,18 @@ sidebar: auto
 ```
 
 
+### 复制模块
+
+如果我们有多个 Spring Boot 模块，按部就班的创建就比较慢了，如果已经有了一个 Spring Boot 模块，则直接复制过来改一改就好了。  
+
+下面是操作步骤：
+
+1、 IDEA 中选中模块，然后【复制】【粘贴】，重新命名。  
+2、修改 pom.xml 中的 artifactId 和 build-finalName。  
+3、右击 pom.xml 文件，选择 Add as Maven Project，让项目作为 Maven 项目加载进来。   
+4、修改包名。   
+5、修改启动文件的名字。  
+
+这里复制一份 spring-log4j-demo 模块，并重命名为 spring-db-demo 模块。
+
+
