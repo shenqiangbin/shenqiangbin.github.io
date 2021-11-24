@@ -29,8 +29,16 @@
                             link: '/java/idea'
                         }
                     ]
-                  }
+                  },
+                  {
+                      text: '接口设计',
+                      link: '/java/interface'
+                  },
               ]
+            },
+            {
+                text: 'Spring Boot',
+                link: '/springboot',
             },
             {
                 text: 'Linux',
@@ -124,6 +132,14 @@
                     children: [
                         '/convention/log.md',
                         '/convention/simpleCode.md'
+                    ]
+                }
+            ],
+            '/springboot':[
+                {
+                    text: 'Spring Boot',
+                    children: [
+                        '/springboot/jdbcTemplate.md',
                     ]
                 }
             ]
