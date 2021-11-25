@@ -30,7 +30,7 @@ footer: Powered by VuePress | Copyright © 2018-present SQBER
 
 TODO:
 
-- 快速复制模块(缺少视频)
+✅ 快速复制模块(缺少视频)
 - 数据访问 - JDBC （将 JdbcTemplate 的相关数据访问功能抽离出公共接口）(事务支持 https://www.cnblogs.com/harrychinese/p/SpringBoot_jdbc_transaction.html)
 - mac OBS 直播（https://zhuanlan.zhihu.com/p/103842121）
 mac的obs录制不到全屏 https://blog.csdn.net/neve_give_up_dan/article/details/109403926
