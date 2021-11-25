@@ -58,3 +58,8 @@ OBS 的视频设置修改为：
 
 - nacos
 - Spring Cloud
+
+
+流水帐
+
+- 整理新电脑，安装各种软件，整理 Google 中的收藏夹（把 Mac 的也整理后，使用 Google 帐号同步，以后统一处理）
