@@ -106,6 +106,10 @@
                   {
                       text: '菜谱',
                       link: '/life/recipe.md'
+                  },
+                  {
+                      text: '直播',
+                      link: '/life/livevideo.md'
                   }
                 ],
             },
