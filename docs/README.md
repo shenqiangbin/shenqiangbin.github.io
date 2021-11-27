@@ -31,6 +31,7 @@ footer: Powered by VuePress | Copyright © 2018-present SQBER
 
 TODO:
 
+接口安全设计（相关代码编写）
 
 - 数据访问 - JDBC （将 JdbcTemplate 的相关数据访问功能抽离出公共接口）(事务支持 https://www.cnblogs.com/harrychinese/p/SpringBoot_jdbc_transaction.html)
 
@@ -55,3 +56,5 @@ TODO:
 流水帐
 
 - 整理新电脑，安装各种软件，整理 Google 中的收藏夹（把 Mac 的也整理后，使用 Google 帐号同步，以后统一处理）
+
+- todo 封装人民日报，使其查阅起来更简单。

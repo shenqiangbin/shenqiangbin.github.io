@@ -27,6 +27,10 @@
                         {
                             text: 'IDEA',
                             link: '/java/idea'
+                        },
+                        {
+                            text: '访问数据库',
+                            link: '/java/database'
                         }
                     ]
                   },

@@ -86,7 +86,9 @@ todo
 2、修改 pom.xml 中的 artifactId 和 build-finalName。  
 3、右击 pom.xml 文件，选择 Add as Maven Project，让项目作为 Maven 项目加载进来。   
 4、修改包名。   
-5、修改启动文件的名字。  
+5、修改启动文件的名字（如果有 BaseScan 注解，也需要修改下要扫描的包）。  
+
+视频示例：
 
 这里复制一份 spring-log4j-demo 模块，并重命名为 spring-db-demo 模块。
 
