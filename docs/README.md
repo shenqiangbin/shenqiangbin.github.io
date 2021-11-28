@@ -25,6 +25,10 @@ heroImage: /imgs/logo.png
 footer: Powered by VuePress | Copyright © 2018-present SQBER
 ---
 
+- ✅[人民日报](/life/paper-rmrb.html) (2021.11.28记)
+
+------
+
 - ✅ [IDEA 相关](/java/idea.html)
 - ✅ [快速复制模块](java/create-project.html#复制模块)
 - ✅ [B站如何直播（Mac）](life/livevideo.html)
@@ -57,7 +61,6 @@ TODO:
 
 - 整理新电脑，安装各种软件，整理 Google 中的收藏夹（把 Mac 的也整理后，使用 Google 帐号同步，以后统一处理）
 
-- todo 封装人民日报，使其查阅起来更简单。
 
 
   

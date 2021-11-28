@@ -12,6 +12,9 @@ sidebar: auto
     }
 </style>
 
+说明：此资源来自 人民日报（paper.people.com.cn/rmrb/index.html），因其版式我用起来感觉不方便，所以对其收集，仅限我个人学习使用。
+
+相关代码在 picSpider 仓库的 paper-pdf 分支中。
 
 ## 2021.11.28 周日 
 
