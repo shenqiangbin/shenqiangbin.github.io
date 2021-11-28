@@ -114,6 +114,10 @@
                   {
                       text: '直播',
                       link: '/life/livevideo.md'
+                  },
+                  {
+                    text: '人民日报',
+                    link: '/life/paper-rmrb.md'
                   }
                 ],
             },
