@@ -32,6 +32,7 @@ footer: Powered by VuePress | Copyright © 2018-present SQBER
 - ✅ [IDEA 相关](/java/idea.html)
 - ✅ [快速复制模块](java/create-project.html#复制模块)
 - ✅ [B站如何直播（Mac）](life/livevideo.html)
+- ✅ [VSCode](soft/vscode.html)
 
 TODO:
 
@@ -55,6 +56,8 @@ TODO:
 
 - nacos
 - Spring Cloud
+
+- 增删改查 知多少。
 
 
 流水帐

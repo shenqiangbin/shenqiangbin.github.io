@@ -42,6 +42,8 @@ spring:
 打断点的形式，看是怎么运行的。
 > Spring Boot 都没有找到 JdbcTemplate Bean 的时候，会自动注册一个 Bean 。
 
+我们复制一个简单的 Spring Boot 项目。进行查看。
+
 关于 `JdbcTemplate` 的使用后面再介绍。
 
 ### 多个数据源
