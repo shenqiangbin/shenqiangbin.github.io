@@ -57,6 +57,10 @@ module.exports = {
               },
             ],
           },
+          {
+            text: 'ubuntu',
+            link: '/linux/ubuntu'
+          }
         ],
       },
       // NavbarGroup

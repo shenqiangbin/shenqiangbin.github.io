@@ -29,12 +29,15 @@ footer: Powered by VuePress | Copyright © 2018-present SQBER
 
 ------
 
-- ✅ [IDEA 相关](/java/idea.html)
-- ✅ [快速复制模块](java/create-project.html#复制模块)
-- ✅ [B站如何直播（Mac）](life/livevideo.html)
-- ✅ [VSCode](soft/vscode.html)
+- ✅ [IDEA 相关](/java/idea.html)
+- ✅ [快速复制模块](java/create-project.html#复制模块)
+- ✅ [B站如何直播（Mac）](life/livevideo.html)
+- ✅ [VSCode](soft/vscode.html)
+- ✅ [安装 ubuntu 系统](linux/ubuntu.html)
 
 TODO:
+
+
 
 接口安全设计（相关代码编写）
 
@@ -66,4 +69,11 @@ TODO:
 
 
 
+git log --oneline --graph
   
+git config --global user.name "bryan sun"
+git config --global user.email "hitsjt@gmail.com"
+
+git config -l
+
+git clone xxxxx
