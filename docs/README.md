@@ -89,9 +89,7 @@ git clone xxxxx
 https://nullpointer.pw/github%E4%BB%A3%E7%A0%81clone%E5%8A%A0%E9%80%9F.html
 
 
-ubuntu 快速打开终端。Ctrl + Alt + T
-自带截图 `Shift+ Prt Scrn`
-终端打开目录 nautilus .
+
 
 git 配置 SSH 密钥
 https://docs.github.com/cn/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys
@@ -99,3 +97,7 @@ https://docs.github.com/cn/authentication/connecting-to-github-with-ssh/checking
 ls -al ???
 
 https://git-scm.com/download/gui/linux
+
+
+xp 密钥：
+MRX3F-47B9T-2487J-KWKMF-RPWBY

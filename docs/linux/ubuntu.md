@@ -7,6 +7,15 @@ sidebar: auto
 系统安装很简单，但安装之后的问题就比较多了。
 
 
+## 常用操作
+
+| 说明       | 命令           |
+| ------------- |-------------|
+| 快速打开终端    | `Ctrl + Alt + T` |
+| 自带截图       | `Shift+ Prt Scrn`      |
+| 在终端打开目录   | `nautilus .`      |
+ 
+
 ## 安装【微信】和【QQ】
 
 
@@ -49,16 +58,14 @@ sudo docker run -d --name wechat --device /dev/snd --ipc="host"\
 
 如果使用的是 fcitx 框架的输入法，则需要将上面 docker 命令中的 ibus 修改成 fcitx，否则则不用修改。
 
-ibus 重启：
+## ibus
 
-ibus-daemon -r -d -x
+输入法经常无法正常使用，这时候就需要重新启动下 `ibus`（我使用的输入法是 `ibus` 框架，而不是 `fcitx` 框架的）
+
+ibus 重启命令如下：
+
+```ibus-daemon -r -d -x```
 
 ## 参照：
 
 [https://zhuanlan.zhihu.com/p/372972441](https://zhuanlan.zhihu.com/p/372972441)
-
-xp 密钥：
-MRX3F-47B9T-2487J-KWKMF-RPWBY
-
-
-smb://172.16.169.128
