@@ -31,9 +31,13 @@ footer: Powered by VuePress | Copyright © 2018-present SQBER
 
 - ✅ [IDEA 相关](/java/idea.html)
 - ✅ [快速复制模块](java/create-project.html#复制模块)
-- ✅ [B站如何直播（Mac）](life/livevideo.html)
-- ✅ [VSCode](soft/vscode.html)
-- ✅ [安装 ubuntu 系统](linux/ubuntu.html)
+- ✅ [B站如何直播（Mac）](life/livevideo)
+- ✅ [VSCode](soft/vscode)
+- ✅ [安装 ubuntu 系统](linux/ubuntu)
+
+## 代码管理
+
+- ✅ [Git](linux/git)
 
 ## 安全
 
@@ -68,36 +72,10 @@ footer: Powered by VuePress | Copyright © 2018-present SQBER
 
 - 整理新电脑，安装各种软件，整理 Google 中的收藏夹（把 Mac 的也整理后，使用 Google 帐号同步，以后统一处理）
 
-
-
-git log --oneline --graph
-  
-git config --global user.name "bryan sun"
-git config --global user.email "hitsjt@gmail.com"
-
-
-git config remote.origin.url "git@github.com:shenqiangbin/shenqiangbin.github.io.git"
-
-git add .
-
-git config -l
-
-git clone xxxxx
-
-
 修改 hosts
 https://nullpointer.pw/github%E4%BB%A3%E7%A0%81clone%E5%8A%A0%E9%80%9F.html
 
-
-
-
-git 配置 SSH 密钥
-https://docs.github.com/cn/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys
-
 ls -al ???
-
-https://git-scm.com/download/gui/linux
-
 
 xp 密钥：
 MRX3F-47B9T-2487J-KWKMF-RPWBY

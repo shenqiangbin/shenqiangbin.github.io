@@ -60,6 +60,10 @@ module.exports = {
           {
             text: 'ubuntu',
             link: '/linux/ubuntu'
+          },
+          {
+            text: 'git',
+            link: '/linux/git'
           }
         ],
       },

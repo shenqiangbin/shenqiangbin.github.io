@@ -11,9 +11,9 @@ sidebar: auto
 
 | 说明       | 命令           |
 | ------------- |-------------|
-| 快速打开终端    | `Ctrl + Alt + T` |
-| 自带截图       | `Shift+ Prt Scrn`      |
-| 在终端打开目录   | `nautilus .`      |
+| 快速打开终端    | Ctrl + Alt + T |
+| 自带截图       | Shift+ Prt Scrn      |
+| 在终端打开目录   | nautilus .      |
  
 
 ## 安装【微信】和【QQ】
