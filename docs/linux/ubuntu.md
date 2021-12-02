@@ -49,9 +49,16 @@ sudo docker run -d --name wechat --device /dev/snd --ipc="host"\
 
 如果使用的是 fcitx 框架的输入法，则需要将上面 docker 命令中的 ibus 修改成 fcitx，否则则不用修改。
 
+ibus 重启：
 
+ibus-daemon -r -d -x
 
 ## 参照：
 
 [https://zhuanlan.zhihu.com/p/372972441](https://zhuanlan.zhihu.com/p/372972441)
 
+xp 密钥：
+MRX3F-47B9T-2487J-KWKMF-RPWBY
+
+
+smb://172.16.169.128
