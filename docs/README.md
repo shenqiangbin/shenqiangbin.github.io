@@ -35,15 +35,11 @@ footer: Powered by VuePress | Copyright © 2018-present SQBER
 - ✅ [VSCode](soft/vscode.html)
 - ✅ [安装 ubuntu 系统](linux/ubuntu.html)
 
-------
-
 ## 安全
 
-- ✅ [接口安全设计](java/interface.html)
+- ✅ [接口安全设计](java/interface.html)
 
 ## TODO
-
-
 
 接口安全设计（相关代码编写）
 
@@ -82,6 +78,8 @@ git config --global user.email "hitsjt@gmail.com"
 
 
 git config remote.origin.url "git@github.com:shenqiangbin/shenqiangbin.github.io.git"
+
+git add .
 
 git config -l
 
