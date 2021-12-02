@@ -74,6 +74,23 @@ git log --oneline --graph
 git config --global user.name "bryan sun"
 git config --global user.email "hitsjt@gmail.com"
 
+
+git config remote.origin.url "git@github.com:shenqiangbin/shenqiangbin.github.io.git"
+
 git config -l
 
 git clone xxxxx
+
+
+修改 hosts
+https://nullpointer.pw/github%E4%BB%A3%E7%A0%81clone%E5%8A%A0%E9%80%9F.html
+
+
+ubuntu 快速打开终端。Ctrl + Alt + T
+自带截图 `Shift+ Prt Scrn`
+终端打开目录 nautilus .
+
+git 配置 SSH 密钥
+https://docs.github.com/cn/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys
+
+ls -al ???
