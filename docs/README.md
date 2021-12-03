@@ -79,3 +79,104 @@ ls -al ???
 
 xp 密钥：
 MRX3F-47B9T-2487J-KWKMF-RPWBY
+
+
+HTTPS
+自签名证书，CA机构颁布的证书
+
+80 端口 nginx 配置
+非 80 端口 nginx 的 https 配置
+
+https://wangwenbo.cn/blog/archives/10.html
+
+```nginx
+
+user  nginx;
+worker_processes  auto;
+
+error_log  /var/log/nginx/error.log notice;
+pid        /var/run/nginx.pid;
+
+
+events {
+    worker_connections  1024;
+}
+
+
+http {
+    include       /etc/nginx/mime.types;
+    default_type  application/octet-stream;
+
+    log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+                      '$status $body_bytes_sent "$http_referer" '
+                      '"$http_user_agent" "$http_x_forwarded_for"';
+
+    access_log  /var/log/nginx/access.log  main;
+
+    sendfile        on;
+    #tcp_nopush     on;
+
+    keepalive_timeout  65;
+
+    #gzip  on;
+
+    include /etc/nginx/conf.d/*.conf;
+
+    server{
+    	listen 443 ssl;
+    	server_name localhost;
+            ssl_certificate      server.crt;
+            ssl_certificate_key  server.key;
+            ssl_session_cache    shared:SSL:1m;
+            ssl_session_timeout  5m;
+
+            ssl_ciphers  HIGH:!aNULL:!MD5;
+            ssl_prefer_server_ciphers  on;
+
+    	location / {
+    		root /home/test;
+    		index index.html index.htm;
+    		try_files $uri $uri/ /index.html;
+    		proxy_http_version 1.1;
+    	}
+    }
+
+
+    server{
+        listen 8081 ssl;
+        server_name localhost;
+
+
+        ssl_certificate      server.crt;
+        ssl_certificate_key  server.key;
+        ssl_session_cache    shared:SSL:1m;
+        ssl_session_timeout  5m;
+
+        ssl_ciphers  HIGH:!aNULL:!MD5;
+        ssl_prefer_server_ciphers  on;
+
+
+        location / {
+                root /home/test;
+                index index.html index.htm;
+                try_files $uri $uri/ /index.html;
+                proxy_http_version 1.1;
+        }
+    }
+
+
+
+}
+
+```
+
+
+vuepress 支持搜索
+https://vuepress-community.netlify.app/zh/plugins/serve/#host
+
+支持通过 Chrome 保存到桌面，快捷访问
+
+做成一个工具站也是博客站
+
+迁移 站点内容
+
