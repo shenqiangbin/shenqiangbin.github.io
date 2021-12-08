@@ -1,4 +1,9 @@
 module.exports = {
+  plugins: [
+    ['@vuepress/search', {
+      searchMaxSuggestions: 10
+    }]
+  ],
   lang: "zh-CN",
   title: "SQBER",
   description: "个人站点",
