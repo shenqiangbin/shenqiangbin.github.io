@@ -180,3 +180,9 @@ https://vuepress-community.netlify.app/zh/plugins/serve/#host
 
 迁移 站点内容
 
+
+https://www.sofineday.com/vuepress-seo.html
+
+2.0 的内容搜索插件有问题，会报错。
+这个 https://v2.vuepress.vuejs.org/zh/reference/plugin/search.html#%E5%AE%89%E8%A3%85
+
