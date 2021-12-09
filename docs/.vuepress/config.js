@@ -167,6 +167,7 @@ module.exports = {
     [
       '@vuepress/docsearch',
       {
+        appId: 'S38U9JNOF1',
         apiKey: '288af19e5025dc763ae67b75fcfb3164',
         indexName: 'test_name',
         placeholder: '搜索文档',
