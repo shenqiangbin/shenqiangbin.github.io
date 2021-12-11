@@ -1,8 +1,8 @@
 const { config } = require("vuepress-theme-hope");
 
 module.exports = config({
-  title: "Theme Demo",
-  description: "A demo for vuepress-theme-hope",
+  title: "SQBER",
+  description: "个人站点，记录个人生活和相关技术文档，比如 Java、Spring、Linux、代码管理等内容",
 
   dest: "./dist",
 
@@ -26,20 +26,20 @@ module.exports = config({
 
   locales: {
     "/": {
-      lang: "en-US",
+      lang: "zh-CN",
     },
-    "/zh/": {
-      title: "Theme Demo",
-      description: "vuepress-theme-hope 的 demo",
-    },
+    // "/zh/": {
+    //   title: "Theme Demo",
+    //   description: "vuepress-theme-hope 的 demo",
+    // },
   },
 
   themeConfig: {
-    logo: "/logo.svg",
-    hostname: "https://vuepress-theme-hope-demo.mrhope.site",
+    logo: "/logo.png",
+    hostname: "https://shenqiangbin.github.io/",
 
-    author: "Mr.Hope",
-    repo: "https://github.com/vuepress-theme-hope/vuepress-theme-hope",
+    author: "sqber",
+    repo: "https://github.com/shenqiangbin/",
 
     nav: [
       { text: "Blog Home", link: "/", icon: "home" },
@@ -71,38 +71,38 @@ module.exports = config({
       ],
     },
 
-    locales: {
-      "/zh/": {
-        nav: [
-          { text: "博客主页", link: "/zh/", icon: "home" },
-          { text: "项目主页", link: "/zh/home/", icon: "home" },
-          {
-            text: "如何使用",
-            icon: "creative",
-            link: "/zh/guide/",
-          },
-          {
-            text: "主题文档",
-            icon: "note",
-            link: "https://vuepress-theme-hope.github.io/zh/",
-          },
-        ],
-        sidebar: {
-          "/zh/": [
-            "",
-            "home",
-            "slides",
-            "layout",
-            {
-              title: "如何使用",
-              icon: "creative",
-              prefix: "guide/",
-              children: ["", "page", "markdown", "disable", "encrypt"],
-            },
-          ],
-        },
-      },
-    },
+    // locales: {
+    //   "/zh/": {
+    //     nav: [
+    //       { text: "博客主页", link: "/zh/", icon: "home" },
+    //       { text: "项目主页", link: "/zh/home/", icon: "home" },
+    //       {
+    //         text: "如何使用",
+    //         icon: "creative",
+    //         link: "/zh/guide/",
+    //       },
+    //       {
+    //         text: "主题文档",
+    //         icon: "note",
+    //         link: "https://vuepress-theme-hope.github.io/zh/",
+    //       },
+    //     ],
+    //     sidebar: {
+    //       "/zh/": [
+    //         "",
+    //         "home",
+    //         "slides",
+    //         "layout",
+    //         {
+    //           title: "如何使用",
+    //           icon: "creative",
+    //           prefix: "guide/",
+    //           children: ["", "page", "markdown", "disable", "encrypt"],
+    //         },
+    //       ],
+    //     },
+    //   },
+    // },
 
     blog: {
       intro: "/intro/",
