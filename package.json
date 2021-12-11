@@ -1,0 +1,16 @@
+{
+  "name": "sqber",
+  "version": "1.0.0",
+  "description": "SQBER 个人站点",
+  "license": "MIT",
+  "scripts": {
+    "docs:build": "vuepress build ./",
+    "docs:clean-dev": "vuepress dev ./ --no-cache",
+    "docs:dev": "vuepress dev ./",
+    "docs:eject-theme": "vuepress eject-hope ./"
+  },
+  "devDependencies": {
+    "vuepress": "^1.8.2",
+    "vuepress-theme-hope": "^1.21.0"
+  }
+}
