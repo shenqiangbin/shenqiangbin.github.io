@@ -44,6 +44,9 @@ module.exports = config({
     darkmode: 'switch',
     themeColor: false,
 
+    sitemap: true,
+    copyright: true,
+
     nav: [
       { text: "主页", link: "/", icon: "home" },
       { text: "项目主页", link: "/home/", icon: "home" },
