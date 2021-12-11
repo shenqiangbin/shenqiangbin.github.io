@@ -2,37 +2,33 @@
 blog: true
 home: true
 icon: home
-title: Blog Home
-heroImage: /logo.svg
-heroText: the name of your blog
-tagline: You can put your slogan here
-heroFullScreen: true
+title: SQBER的博客主页
+heroImage: /logo.png
+heroText: SQBER
+heroFullScreen: false
+tagline: 自由
+bgImage: '/assets/MilkyWay.jpg'
 project:
   - type: project
-    name: project name
-    desc: project detailed description
-    link: https://your.project.link
+    name: 项目名称
+    desc: 项目详细描述
+    link: https://你的项目链接
 
   - type: link
-    name: link name
-    desc: link detailed description
-    link: https://link.address
+    name: 链接名称
+    desc: 链接详细描述
+    link: https://链接地址
 
   - type: book
-    name: book name
-    desc: Detailed description of the book
-    link: https://link.to.your.book
+    name: 书籍名称
+    desc: 书籍详细描述
+    link: https://你的书籍链接
 
   - type: article
-    name: article name
-    desc: Detailed description of the article
-    link: https://link.to.your.article
+    name: 文章名称
+    desc: 文章详细描述
+    link: https://你的文章链接
 
-footer: customize your footer text
+footer: 冀-ICP备 17029815
 ---
 
-This is a blog home page.
-
-To use this layout, you should set both `blog: true` and `home: true` in the page front matter.
-
-For related configuration docs, please see [blog homepage](https://vuepress-theme-hope.github.io/guide/blog/home/)

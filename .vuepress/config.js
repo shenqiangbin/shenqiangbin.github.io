@@ -41,16 +41,19 @@ module.exports = config({
     author: "sqber",
     repo: "https://github.com/shenqiangbin/",
 
+    darkmode: 'switch',
+    themeColor: false,
+
     nav: [
-      { text: "Blog Home", link: "/", icon: "home" },
-      { text: "Project Home", link: "/home/", icon: "home" },
+      { text: "主页", link: "/", icon: "home" },
+      { text: "项目主页", link: "/home/", icon: "home" },
       {
-        text: "Guide",
+        text: "使用",
         icon: "creative",
         link: "/guide/",
       },
       {
-        text: "Docs",
+        text: "文档",
         link: "https://vuepress-theme-hope.github.io/",
         icon: "note",
       },
@@ -63,7 +66,7 @@ module.exports = config({
         "slides",
         "layout",
         {
-          title: "Guide",
+          title: "使用",
           icon: "creative",
           prefix: "guide/",
           children: ["", "page", "markdown", "disable", "encrypt"],
@@ -107,16 +110,14 @@ module.exports = config({
     blog: {
       intro: "/intro/",
       sidebarDisplay: "mobile",
-      links: {
-        Zhihu: "https://zhihu.com",
-        Baidu: "https://baidu.com",
-        Github: "https://github.com",
+      links: {       
+        Github: "https://github.com/shenqiangbin/",
+        QQ: 'http://wpa.qq.com/msgrd?v=3&uin=1969858717&site=qq&menu=yes'
       },
     },
-
     footer: {
       display: true,
-      content: "默认页脚",
+      content: "冀-ICP备 17029815",
     },
 
     comment: {
