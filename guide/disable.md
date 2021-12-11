@@ -1,7 +1,9 @@
 ---
-title: Component disabled
+article: false
+
+title: 组件禁用
 icon: config
-category: Guide
+category: 使用指南
 
 navbar: false
 sidebar: false
@@ -19,20 +21,20 @@ footer: false
 backtotop: false
 ---
 
-You can disable some functions on the page by setting the Frontmatter of the page.
+你可以通过设置页面的 Frontmatter，在页面禁用一些功能。
 
 <!-- more -->
 
-These should be disabled on this page:
+本页面应当禁用了:
 
-- Navbar
-- Sidebar
-- Breadcrumb
-- Page information
-- Contributors
-- Edit link
-- Update time
-- Prev/Next link
-- Comment
-- Footer
-- Back to top button
+- 导航栏
+- 侧边栏
+- 路径导航
+- 页面信息
+- 贡献者
+- 编辑此页链接
+- 更新时间
+- 上一篇/下一篇 链接
+- 评论
+- 页脚
+- 返回顶部按钮

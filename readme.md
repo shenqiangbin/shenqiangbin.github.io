@@ -2,7 +2,7 @@
 blog: true
 home: true
 icon: home
-title: SQBER的博客主页
+title: 首页
 heroImage: /logo.png
 heroText: SQBER
 heroFullScreen: false
@@ -10,25 +10,33 @@ tagline: 自由
 bgImage: '/assets/MilkyWay.jpg'
 project:
   - type: project
-    name: 项目名称
-    desc: 项目详细描述
-    link: https://你的项目链接
+    name: 任务管理系统
+    desc: 使用 Spring Boot + Vue 开发的任务管理系统
+    link: https://github.com/shenqiangbin/personMgr
 
   - type: link
-    name: 链接名称
-    desc: 链接详细描述
-    link: https://链接地址
+    name: 瞄了眼
+    desc: 同事的个人博客，专注于知识图谱
+    link: http://www.miaoleyan.com/
 
   - type: book
-    name: 书籍名称
-    desc: 书籍详细描述
-    link: https://你的书籍链接
+    name: 和时间做朋友
+    desc: 李笑来老师的作品，曾在新东方当老师
+    link: https://github.com/xiaolai/time-as-a-friend
 
   - type: article
-    name: 文章名称
-    desc: 文章详细描述
-    link: https://你的文章链接
+    name: 码农翻身
+    desc: 用故事讲技术的大佬
+    link: https://blog.csdn.net/coderising
 
 footer: 冀-ICP备 17029815
 ---
 
+todo:
+
+图标替换，还有一些默认 header 中使用的图标
+全文检索
+
+内容迁移
+导航设定
+评论配置

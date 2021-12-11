@@ -1,18 +1,21 @@
 ---
+article: false
+
 icon: markdown
-title: Markdown Enhance
-category: Guide
+title: Markdown 增强
+category: 使用指南
+
 tag:
   - markdown
 ---
 
-`vuepress-theme-hope` enables more syntax in Markdown via the built-in [md-enhance](https://vuepress-theme-hope.github.io/md-enhance) plugin.
+`vuepress-theme-hope` 通过内置 [md-enhance](https://vuepress-theme-hope.github.io/md-enhance)，在 Markdown 中启用了更多的语法与新功能。
 
 <!-- more -->
 
-## Enable all
+## 一键启用
 
-You can set `themeconfig.mdEnhance.enableAll` to enable all features of the [md-enhance](https://vuepress-theme-hope.github.io/md-enhance) plugin.
+你可以设置 `themeconfig.mdEnhance.enableAll` 启用 [md-enhance](https://vuepress-theme-hope.github.io/md-enhance) 插件的所有功能。
 
 ```js {3-5}
 module.exports = {
@@ -24,13 +27,13 @@ module.exports = {
 };
 ```
 
-## New Feature
+## 新增的更多语法
 
-### Superscript and Subscript
+### 上下角标
 
 19^th^ H~2~O
 
-::: details Code
+::: details 代码
 
 ```md
 19^th^ H~2~O
@@ -38,91 +41,91 @@ module.exports = {
 
 :::
 
-- [View Detail](https://vuepress-theme-hope.github.io/guide/markdown/sup-sub/)
+- [点击查看](https://vuepress-theme-hope.github.io/zh/guide/markdown/sup-sub/)
 
-### Align
+### 自定义对齐
 
 ::: center
 
-I am center
+我是居中的
 
 :::
 
 ::: right
 
-I am right align
+我在右对齐
 
 :::
 
-:::: details Code
+:::: details 代码
 
 ```md
 ::: center
 
-I am center
+我是居中的
 
 :::
 
 ::: right
 
-I am right align
+我在右对齐
 
 :::
 ```
 
 ::::
 
-- [View Detail](https://vuepress-theme-hope.github.io/guide/markdown/align/)
+- [点击查看](https://vuepress-theme-hope.github.io/zh/guide/markdown/align/)
 
-### Footnote
+### 脚注
 
-This text has footnote[^first].
+此文字有脚注[^first].
 
-[^first]: This is footnote content
+[^first]: 这是脚注内容
 
-::: details Code
+::: details 代码
 
 ```md
-This text has footnote[^first].
+此文字有脚注[^first].
 
-[^first]: This is footnote content
+[^first]: 这是脚注内容
 ```
 
 :::
 
-- [View Detail](https://vuepress-theme-hope.github.io/guide/markdown/footnote/)
+- [点击查看](https://vuepress-theme-hope.github.io/zh/guide/markdown/footnote/)
 
-### Mark
+### 标记
 
-You can mark ==important words== .
+你可以标记 ==重要的内容== 。
 
-::: details Code
+::: details 代码
 
 ```md
-You can mark ==important words== .
+你可以标记 ==重要的内容== 。
 ```
 
 :::
 
-- [View Detail](https://vuepress-theme-hope.github.io/guide/markdown/mark/)
+- [点击查看](https://vuepress-theme-hope.github.io/zh/guide/markdown/mark/)
 
-### Tasklist
+### 任务列表
 
-- [x] Plan A
-- [ ] Plan B
+- [x] 计划 1
+- [ ] 计划 2
 
 ::: details Code
 
 ```md
-- [x] Plan A
-- [ ] Plan B
+- [x] 计划 1
+- [ ] 计划 2
 ```
 
 :::
 
-- [View Detail](https://vuepress-theme-hope.github.io/guide/markdown/tasklist/)
+- [点击查看](https://vuepress-theme-hope.github.io/guide/markdown/tasklist/)
 
-### Flowchart
+### 流程图
 
 ```flow
 cond=>condition: Process?
@@ -133,7 +136,7 @@ cond(yes)->process->e
 cond(no)->e
 ```
 
-::: details Code
+::: details 代码
 
 ````md
 ```flow
@@ -148,7 +151,7 @@ cond(no)->e
 
 :::
 
-- [View Detail](https://vuepress-theme-hope.github.io/guide/markdown/flowchart/)
+- [点击查看](https://vuepress-theme-hope.github.io/zh/guide/markdown/flowchart/)
 
 ## Mermaid
 
@@ -160,7 +163,7 @@ graph TD;
     C-->D;
 ```
 
-::: details Code
+::: details 代码
 
 ````md
 ```mermaid
@@ -174,16 +177,16 @@ graph TD;
 
 :::
 
-- [View Detail](https://vuepress-theme-hope.github.io/guide/markdown/mermaid/)
+- [点击查看](https://vuepress-theme-hope.github.io/zh/guide/markdown/mermaid/)
 
-### Tex
+### Tex 语法
 
 $$
 \frac {\partial^r} {\partial \omega^r} \left(\frac {y^{\omega}} {\omega}\right)
 = \left(\frac {y^{\omega}} {\omega}\right) \left\{(\log y)^r + \sum_{i=1}^r \frac {(-1)^i r \cdots (r-i+1) (\log y)^{r-i}} {\omega^i} \right\}
 $$
 
-::: details Code
+::: details 代码
 
 ```md
 $$
@@ -194,20 +197,20 @@ $$
 
 :::
 
-- [View Detail](https://vuepress-theme-hope.github.io/guide/markdown/tex/)
+- [点击查看](https://vuepress-theme-hope.github.io/zh/guide/markdown/tex/)
 
-### Demo
+### 代码案例
 
-::: demo A normal demo
+::: demo 一个普通 Demo
 
 ```html
 <h1>Mr.Hope</h1>
-<p>Is <span id="very">very</span> handsome</p>
+<p><span id="very">十分</span> 帅</p>
 ```
 
 ```js
 document.querySelector("#very").addEventListener("click", () => {
-  alert("Very handsome!");
+  alert("十分帅");
 });
 ```
 
@@ -219,19 +222,19 @@ span {
 
 :::
 
-:::: details Code
+:::: details 代码
 
 ````md
-::: demo A normal demo
+::: demo 一个普通 Demo
 
 ```html
 <h1>Mr.Hope</h1>
-<p>Is <span id="very">very</span> handsome</p>
+<p><span id="very">十分</span> 帅</p>
 ```
 
 ```js
 document.querySelector("#very").addEventListener("click", () => {
-  alert("Very handsome!");
+  alert("十分帅");
 });
 ```
 
@@ -246,18 +249,18 @@ span {
 
 ::::
 
-::: demo [react] A react demo
+::: demo [react] 一个 React Demo
 
 ```js
 export default class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { message: "very handsome" };
+    this.state = { message: "十分帅" };
   }
   render() {
     return (
       <div className="box-react">
-        Mr.Hope is <span>{this.state.message}</span>
+        Mr.Hope <span>{this.state.message}</span>
       </div>
     );
   }
@@ -272,21 +275,21 @@ export default class App extends React.Component {
 
 :::
 
-:::: details Code
+:::: details 代码
 
 ````md
-::: demo [react] A react demo
+::: demo [react] 一个 React Demo
 
 ```js
 export default class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { message: "very handsome" };
+    this.state = { message: "十分帅" };
   }
   render() {
     return (
       <div className="box-react">
-        Mr.Hope is <span>{this.state.message}</span>
+        Mr.Hope <span>{this.state.message}</span>
       </div>
     );
   }
@@ -304,17 +307,17 @@ export default class App extends React.Component {
 
 ::::
 
-::: demo [vue] A vue demo
+::: demo [vue] 一个 Vue Demo
 
 ```vue
 <template>
   <div class="box">
-    Mr.Hope is <span>{{ message }}</span>
+    Mr.Hope <span>{{ message }}</span>
   </div>
 </template>
 <script>
 export default {
-  data: () => ({ message: "very handsome" }),
+  data: () => ({ message: "十分帅" }),
 };
 </script>
 <style>
@@ -326,20 +329,20 @@ export default {
 
 :::
 
-:::: details Code
+:::: details 代码
 
 ````md
-::: demo [vue] A vue demo
+::: demo [vue] 一个 Vue Demo
 
 ```vue
 <template>
   <div class="box">
-    Mr.Hope is <span>{{ message }}</span>
+    Mr.Hope <span>{{ message }}</span>
   </div>
 </template>
 <script>
 export default {
-  data: () => ({ message: "very handsome" }),
+  data: () => ({ message: "十分帅" }),
 };
 </script>
 <style>
@@ -354,12 +357,12 @@ export default {
 
 ::::
 
-::: demo A normal demo
+::: demo 一个普通 Demo
 
 ```md
-# Title
+# 标题
 
-is very handsome.
+十分帅
 ```
 
 ```ts
@@ -380,15 +383,15 @@ h1 {
 
 :::
 
-:::: details Code
+:::: details 代码
 
 ````md
-::: demo A normal demo
+::: demo 一个普通 Demo
 
 ```md
-# Title
+# 标题
 
-is very handsome.
+十分帅
 ```
 
 ```ts
@@ -412,26 +415,26 @@ h1 {
 
 ::::
 
-- [View Detail](https://vuepress-theme-hope.github.io/guide/markdown/demo/)
+- [点击查看](https://vuepress-theme-hope.github.io/zh/guide/markdown/demo/)
 
-### Presentation
+### 幻灯片
 
 @slidestart
 
-## Slide 1
+## 幻灯片 1
 
-A paragraph with some text and a [link](https://mrhope.site)
-
----
-
-## Slide 2
-
-- Item 1
-- Item 2
+一个有文字和 [链接](https://mrhope.site) 的段落
 
 ---
 
-## Slide 3.1
+## 幻灯片 2
+
+- 列表 1
+- 列表 2
+
+---
+
+## 幻灯片 3.1
 
 ```js
 const a = 1;
@@ -439,7 +442,7 @@ const a = 1;
 
 --
 
-## Slide 3.2
+## 幻灯片 3.2
 
 $$
 J(\theta_0,\theta_1) = \sum_{i=0}
@@ -447,25 +450,25 @@ $$
 
 @slideend
 
-::: details Code
+::: details 代码
 
 ````md
 @slidestart
 
-## Slide 1
+## 幻灯片 1
 
-A paragraph with some text and a [link](https://mrhope.site)
-
----
-
-## Slide 2
-
-- Item 1
-- Item 2
+一个有文字和 [链接](https://mrhope.site) 的段落
 
 ---
 
-## Slide 3.1
+## 幻灯片 2
+
+- 列表 1
+- 列表 2
+
+---
+
+## 幻灯片 3.1
 
 ```js
 const a = 1;
@@ -473,7 +476,7 @@ const a = 1;
 
 --
 
-## Slide 3.2
+## 幻灯片 3.2
 
 $$
 J(\theta_0,\theta_1) = \sum_{i=0}
@@ -484,70 +487,70 @@ $$
 
 :::
 
-- [View Detail](https://vuepress-theme-hope.github.io/guide/markdown/presentation/)
+- [点击查看](https://vuepress-theme-hope.github.io/zh/guide/markdown/presentation/)
 
-## Other Syntax
+## 其他语法
 
-::: info custom title
+::: info 自定义标题
 
-A custom information container
-
-:::
-
-::: tip custom title
-
-A custom tip container
+信息容器
 
 :::
 
-::: warning custom title
+::: tip 自定义标题
 
-A custom warning container
-
-:::
-
-::: danger custom Title
-
-A custom danger container
+提示容器
 
 :::
 
-::: details custom title
+::: warning 自定义标题
 
-A custom details container
+警告容器
 
 :::
 
-:::: details Code
+::: danger 自定义标题
+
+危险容器
+
+:::
+
+::: details 自定义标题
+
+详情容器
+
+:::
+
+:::: details 代码
 
 ```md
-::: info custom title
+::: info 自定义标题
 
-A custom information container
-
-:::
-
-::: tip custom title
-
-A custom tip container
+信息容器
 
 :::
 
-::: warning custom title
+::: tip 自定义标题
 
-A custom warning container
-
-:::
-
-::: danger custom Title
-
-A custom danger container
+提示容器
 
 :::
 
-::: details custom title
+::: warning 自定义标题
 
-A custom details container
+警告容器
+
+:::
+
+::: danger 自定义标题
+
+危险容器
+
+:::
+
+::: details 自定义标题
+
+详情容器
 
 :::
 ```

@@ -48,7 +48,7 @@ module.exports = config({
     copyright: true,
 
     nav: [
-      { text: "主页", link: "/", icon: "home" },
+      { text: "首页", link: "/", icon: "home" },
       { text: "项目主页", link: "/home/", icon: "home" },
       {
         text: "使用",
@@ -66,15 +66,35 @@ module.exports = config({
       "/": [
         "",
         "home",
-        "slides",
-        "layout",
-        {
-          title: "使用",
-          icon: "creative",
-          prefix: "guide/",
-          children: ["", "page", "markdown", "disable", "encrypt"],
-        },
+        "intro",
+        // "layout",
+        // {
+        //   title: "使用",
+        //   icon: "creative",
+        //   prefix: "guide/",
+        //   children: ["", "page", "markdown", "disable", "encrypt"],
+        // },
       ],
+      "":[
+        {
+          title: "布局",
+          icon: "layout",
+          prefix: "layout/",
+          collapsable: false,
+          children: [
+            "sidebar",
+            "sidebar",
+            {
+              title: "页面",
+              icon: "page",
+              collapsable: false,
+              children: ["page", "breadcrumb", "footer"],
+            },
+            "home",
+            "slides",
+          ],
+        }
+      ]
     },
 
     // locales: {
@@ -121,6 +141,7 @@ module.exports = config({
     footer: {
       display: true,
       content: "冀-ICP备 17029815",
+      copyright: 'Copyright © 2017-present SQBER 本文版权归作者所有，欢迎转载，但未经作者同意必须保留此段声明，且在文章页面明显位置给出原文连接，否则保留追究法律责任的权利'
     },
 
     comment: {
