@@ -30,7 +30,7 @@ https://vercel.com/shenqiangbin/sqber-api/settings/environment-variables
 配置成功了，如果将域名 sqber.com 映射过去的话，需要修改其中的网址环境变量。
 有评论并不会收到邮件，只是你回复别人，会给别人发送邮件。
 
-
+- 推送到百度，chrome 等站点
 
 ## 其它
 
