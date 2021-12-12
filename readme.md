@@ -7,7 +7,6 @@ heroImage: /logo.png
 heroText: SQBER
 heroFullScreen: false
 tagline: 自由
-bgImage: '/assets/MilkyWay.jpeg'
 project:
   - type: project
     name: 任务管理系统
