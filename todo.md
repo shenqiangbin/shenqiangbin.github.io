@@ -20,6 +20,13 @@ next: false
 - 导航设定
 - 评论配置
 
+评论支持邮件消息：  
+https://waline.js.org/reference/server.html#%E9%82%AE%E4%BB%B6  
+https://vercel.com/shenqiangbin/sqber-api/settings/environment-variables
+
+配置成功了，如果将域名 sqber.com 映射过去的话，需要修改其中的网址环境变量。
+有评论并不会收到邮件，只是你回复别人，会给别人发送邮件。
+
 - ✅[人民日报](/life/paper-rmrb.html) (2021.11.28记)
 
 ------

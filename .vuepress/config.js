@@ -6,6 +6,7 @@ const nav = [
   { text: "习惯", link: "/convention/", icon: "" },
   // { text: "项目主页", link: "/home/", icon: "home" },
   { text: "关于我", link: "/intro/", icon: "info" },
+  { text: "管理", link: "https://sqber-api.vercel.app/ui", icon: "" },
   // { text: "文档", link: "https://vuepress-theme-hope.github.io/", icon: "note" },
 ]
 
@@ -154,7 +155,8 @@ module.exports = config({
 
     comment: {
       type: "waline",
-      serverURL: "https://vuepress-theme-hope-comment.vercel.app",
+      serverURL: "https://sqber-api.vercel.app/",
+      meta: ['nick', 'mail', 'link']
     },
 
     copyright: {
