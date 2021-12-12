@@ -3,12 +3,22 @@ const { config } = require("vuepress-theme-hope");
 const nav = [
   { text: "首页", link: "/", icon: "home" },
   { text: "待做事项", link: "/todo/", icon: "note" },
+  { text: "习惯", link: "/convention/", icon: "" },
   // { text: "项目主页", link: "/home/", icon: "home" },
   { text: "关于我", link: "/intro/", icon: "info" },
   // { text: "文档", link: "https://vuepress-theme-hope.github.io/", icon: "note" },
 ]
 
 const sidebar = {
+  "/convention":[
+    {
+      title: "习惯",
+      path: "convention/",
+      prefix: "convention/",
+      collapsable: false,
+      children: ["log", "simpleCode"],
+    },
+  ],
   "/": [
     "",
     // "home",
