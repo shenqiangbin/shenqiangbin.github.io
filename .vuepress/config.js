@@ -1,5 +1,49 @@
 const { config } = require("vuepress-theme-hope");
 
+const nav = [
+  { text: "首页", link: "/", icon: "home" },
+  { text: "待做事项", link: "/todo/", icon: "note" },
+  // { text: "项目主页", link: "/home/", icon: "home" },
+  { text: "关于我", link: "/intro/", icon: "info" },
+  // { text: "文档", link: "https://vuepress-theme-hope.github.io/", icon: "note" },
+]
+
+const sidebar = {
+  "/": [
+    "",
+    // "home",
+    "todo",
+    "intro",
+    // "layout",
+    // {
+    //   title: "使用",
+    //   icon: "creative",
+    //   prefix: "guide/",
+    //   children: ["", "page", "markdown", "disable", "encrypt"],
+    // },
+  ],
+  "":[
+    {
+      title: "布局",
+      icon: "layout",
+      prefix: "layout/",
+      collapsable: false,
+      children: [
+        "sidebar",
+        "sidebar",
+        {
+          title: "页面",
+          icon: "page",
+          collapsable: false,
+          children: ["page", "breadcrumb", "footer"],
+        },
+        "home",
+        "slides",
+      ],
+    }
+  ]
+}
+
 module.exports = config({
   title: "SQBER",
   description: "个人站点，记录个人生活和相关技术文档，比如 Java、Spring、Linux、代码管理等内容",
@@ -47,55 +91,9 @@ module.exports = config({
     sitemap: true,
     copyright: true,
 
-    nav: [
-      { text: "首页", link: "/", icon: "home" },
-      { text: "项目主页", link: "/home/", icon: "home" },
-      {
-        text: "使用",
-        icon: "creative",
-        link: "/guide/",
-      },
-      {
-        text: "文档",
-        link: "https://vuepress-theme-hope.github.io/",
-        icon: "note",
-      },
-    ],
+    nav: nav,
 
-    sidebar: {
-      "/": [
-        "",
-        "home",
-        "intro",
-        // "layout",
-        // {
-        //   title: "使用",
-        //   icon: "creative",
-        //   prefix: "guide/",
-        //   children: ["", "page", "markdown", "disable", "encrypt"],
-        // },
-      ],
-      "":[
-        {
-          title: "布局",
-          icon: "layout",
-          prefix: "layout/",
-          collapsable: false,
-          children: [
-            "sidebar",
-            "sidebar",
-            {
-              title: "页面",
-              icon: "page",
-              collapsable: false,
-              children: ["page", "breadcrumb", "footer"],
-            },
-            "home",
-            "slides",
-          ],
-        }
-      ]
-    },
+    sidebar: sidebar,
 
     // locales: {
     //   "/zh/": {
