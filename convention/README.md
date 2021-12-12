@@ -1,5 +1,4 @@
 ---
-icon: page
 title: 习惯
 # 一个页面只能有一个分类
 category: 编码

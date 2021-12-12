@@ -4,6 +4,8 @@ const nav = [
   { text: "首页", link: "/", icon: "home" },
   { text: "待做事项", link: "/todo/", icon: "note" },
   { text: "习惯", link: "/convention/", icon: "" },
+  { text: "Java", link: "/java/", icon: "" },
+
   // { text: "项目主页", link: "/home/", icon: "home" },
   { text: "关于我", link: "/intro/", icon: "info" },
   { text: "管理", link: "https://sqber-api.vercel.app/ui", icon: "" },
@@ -18,6 +20,15 @@ const sidebar = {
       prefix: "convention/",
       collapsable: false,
       children: ["log", "simpleCode"],
+    },
+  ],
+  "/java":[
+    {
+      title: "Java",
+      path: "java/",
+      prefix: "java/",
+      collapsable: false,
+      children: ["create-project", "nacos", "idea", "database", "interface"],
     },
   ],
   "/": [
