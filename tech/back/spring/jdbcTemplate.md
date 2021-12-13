@@ -1,15 +1,15 @@
 ---
-title: 数据库访问
+title: JdbcTemplate 数据库访问
 # 一个页面只能有一个分类
-category: 编码
+category: JdbcTemplate
 # 一个页面可以有多个标签
-tag:
-  - 编程规范
+# tag:
+#   - 编程规范
 # 此页面会在文章列表指定
 sticky: true
 ---
 
-# 数据库访问
+# JdbcTemplate 数据库访问
 
 ## Spring Boot 下 JdbcTemplate
 

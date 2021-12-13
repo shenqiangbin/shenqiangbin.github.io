@@ -1,10 +1,7 @@
 ---
 title: 接口安全
 # 一个页面只能有一个分类
-category: 编码
-# 一个页面可以有多个标签
-tag:
-  - 编程规范
+category: 安全
 # 此页面会在文章列表指定
 sticky: true
 ---

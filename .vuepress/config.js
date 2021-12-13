@@ -2,9 +2,36 @@ const { config } = require("vuepress-theme-hope");
 
 const nav = [
   { text: "首页", link: "/", icon: "home" },
-  { text: "待做事项", link: "/todo/", icon: "note" },
+  { text: "待做事项", link: "/todo", icon: "note" },
+  { text: "技术", prefix: "/tech/", items:[
+    { text: "后端", link: '', prefix: "back/", items:[
+      { text: "Java", link: "java/" },
+      { text: ".Net", link: "dotnet/" },
+      { text: "Maven", link: "maven/" },
+      { text: "Spring", link: "spring/" },
+      { text: "安全", link: "security/" },
+      { text: "Nacos", link: "nacos/" },
+      
+    ] },
+    { text: "数据库", prefix: "db/", items:[
+      { text: "MySQL", link: "mysql/", icon: "" },
+    ] },
+    { text: "前端", link: '', prefix: "front/", items:[
+      { text: "CSS", link: "css/" },
+      { text: "JavaScript", link: "javascript/" },
+      { text: "JQuery", link: "jquery" },
+      { text: "NPM", link: "npm" },
+      { text: "Yarn", link: "yarn" },
+      { text: "Vue", link: "vue" },
+      { text: "Element", link: "element" },
+      { text: "AntDesign", link: "antdesign" },
+    ] },
+    { text: "开发工具", prefix: "devtool/", items:[
+      { text: "IDEA", link: "idea/", icon: "" },
+    ] },
+  ]},
   { text: "习惯", link: "/convention/", icon: "" },
-  { text: "Java", link: "/java/", icon: "" },
+  { text: "Java", link: "/tech/back/java/", icon: "" },
 
   // { text: "项目主页", link: "/home/", icon: "home" },
   { text: "关于我", link: "/intro/", icon: "info" },
@@ -13,6 +40,42 @@ const nav = [
 ]
 
 const sidebar = {
+  "/tech/back/security":[
+    {
+      title: "安全",
+      path: "/tech/back/security",
+      prefix: "security/",
+      collapsable: false,
+      children: ["interface"],
+    },
+  ],
+  "/tech/back/nacos":[
+    {
+      title: "Nacos",
+      path: "/tech/back/nacos",
+      prefix: "nacos/",
+      collapsable: false,
+      children: ["intro"],
+    },
+  ],
+  "/tech/back/maven":[
+    {
+      title: "Maven",
+      path: "/tech/back/maven",
+      prefix: "maven/",
+      collapsable: false,
+      children: ["create-project"],
+    },
+  ],
+  "/tech/back/spring":[
+    {
+      title: "Spring",
+      path: "/tech/back/spring",
+      prefix: "spring/",
+      collapsable: false,
+      children: ["jdbcTemplate"],
+    },
+  ],
   "/convention":[
     {
       title: "习惯",
@@ -20,15 +83,6 @@ const sidebar = {
       prefix: "convention/",
       collapsable: false,
       children: ["log", "simpleCode"],
-    },
-  ],
-  "/java":[
-    {
-      title: "Java",
-      path: "java/",
-      prefix: "java/",
-      collapsable: false,
-      children: ["create-project", "nacos", "idea", "database", "interface"],
     },
   ],
   "/": [

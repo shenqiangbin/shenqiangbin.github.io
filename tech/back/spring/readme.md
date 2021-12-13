@@ -1,10 +1,10 @@
 ---
-title: Java
+title: Spring
 ---
 
-## 前言
+## Spring 技术
 
-Java 相关内容
+Spring 技术 相关内容
 
 - [日志](./log.md)
 - [简化代码](./simpleCode.md)

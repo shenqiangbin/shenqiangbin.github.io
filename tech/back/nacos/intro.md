@@ -1,10 +1,10 @@
 ---
-title: nacos
+title: nacos介绍
 # 一个页面只能有一个分类
-category: 编码
+category: 微服务
 # 一个页面可以有多个标签
 tag:
-  - 编程规范
+  - nacos
 # 此页面会在文章列表指定
 sticky: true
 ---

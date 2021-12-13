@@ -1,24 +1,16 @@
 ---
-title: IDEA
-# 一个页面只能有一个分类
-category: 编码
-# 一个页面可以有多个标签
+title: 开发工具 IDEA
+category: idea
 tag:
-  - 编程规范
-# 此页面会在文章列表指定
-sticky: true
+  - 开发工具
+sticky: false
 ---
 
-# IDEA
-
-
-## 下载和激活
-
-IDEA 下载
+## IDEA 下载
 
 官方下载地址：[https://www.jetbrains.com/zh-cn/idea/download/other.html](https://www.jetbrains.com/zh-cn/idea/download/other.html)
 
-IDEA 激活
+## IDEA 激活
 
 ide-eval-resetter-2.1.6.zip 文件下载   
 [下载](/file/ide-eval-resetter-2.1.6.zip)  

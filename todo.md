@@ -32,6 +32,8 @@ https://vercel.com/shenqiangbin/sqber-api/settings/environment-variables
 
 - 推送到百度，chrome 等站点
 
+- 整理好分类，按分类来，编码后期改动，导致链接不能使用的情况。
+
 ## 其它
 
 - ✅[人民日报](/life/paper-rmrb.html) (2021.11.28记)
@@ -197,4 +199,35 @@ https://www.sofineday.com/vuepress-seo.html
 
 S38U9JNOF1
 288af19e5025dc763ae67b75fcfb3164
+
+
+- 技术
+    - 前端
+        - CSS
+        - JavaScript
+        - JQuery
+        - Vue
+        - Element
+        - AntDesign
+    - 后端
+        - Java
+            - Spring Boot
+            - Spring Cloud
+        - .Net
+    - 开发工具
+        - IDEA
+    - 架构
+    - 代码重构
+    - 算法
+    - 功能
+- 工具
+- 收集
+- 项目
+- 日记
+- 管理
+- 书籍
+- 生活
+- 报纸
+- 电影
+- 音乐
 
