@@ -6,7 +6,7 @@ category: 项目构建
 tag:
   - Maven
 # 此页面会在文章列表指定
-sticky: true
+sticky: false
 ---
 
 ## Maven 配置

@@ -6,7 +6,7 @@ category: 编码
 tag:
   - 编程规范
 # 此页面会在文章列表指定
-sticky: true
+sticky: false
 ---
 
 ## 前言

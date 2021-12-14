@@ -6,7 +6,7 @@ category: JdbcTemplate
 # tag:
 #   - 编程规范
 # 此页面会在文章列表指定
-sticky: true
+sticky: false
 ---
 
 # JdbcTemplate 数据库访问

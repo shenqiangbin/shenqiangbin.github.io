@@ -1,5 +1,5 @@
 ---
-title: Log4j2执行漏洞
+title: 【漏洞预警】Log4j2执行漏洞
 category: 漏洞
 # 一个页面可以有多个标签
 tag:
