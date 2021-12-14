@@ -40,6 +40,15 @@ const nav = [
 ]
 
 const sidebar = {
+  "/tech/back/java":[
+    {
+      title: "Java",
+      path: "/tech/back/java",
+      prefix: "java/",
+      collapsable: false,
+      children: ["log4j2-problem"],
+    },
+  ],
   "/tech/back/security":[
     {
       title: "安全",
