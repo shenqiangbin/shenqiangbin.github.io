@@ -6,7 +6,7 @@ category: 项目构建
 tag:
   - Maven
 # 此页面会在文章列表指定
-sticky: true
+sticky: false
 ---
 
 ## 项目构建
@@ -80,10 +80,6 @@ sticky: true
 
 
 ### 复制模块
-
-操作视频：
-
-todo
 
 如果我们有多个 Spring Boot 模块，按部就班的创建就比较慢了，如果已经有了一个 Spring Boot 模块，则直接复制过来改一改就好了。  
 

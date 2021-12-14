@@ -64,7 +64,7 @@ const sidebar = {
       path: "/tech/back/maven",
       prefix: "maven/",
       collapsable: false,
-      children: ["create-project"],
+      children: [ "setting", "create-project"],
     },
   ],
   "/tech/back/spring":[
