@@ -19,6 +19,9 @@ const nav = [
     { text: "代码管理", link: '', prefix: "codemgr/", items:[
       { text: "Git", link: "git/" },
     ] },
+    { text: "大数据", link: '', prefix: "bigdata/", items:[
+      { text: "flume", link: "flume/" },
+    ] },
     { text: "前端", link: '', prefix: "front/", items:[
       { text: "CSS", link: "css/" },
       { text: "JavaScript", link: "javascript/" },
@@ -43,6 +46,15 @@ const nav = [
 ]
 
 const sidebar = {
+  "/tech/bigdata/flume":[
+    {
+      title: "flume",
+      path: "/tech/bigdata/flume",
+      prefix: "flume/",
+      collapsable: false,
+      children: ["","intro","install","ftp2hdfs"],
+    },
+  ],
   "/tech/codemgr/git":[
     {
       title: "Git",
