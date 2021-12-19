@@ -97,6 +97,15 @@ const sidebar = {
       children: ["jdbcTemplate"],
     },
   ],
+  "/tech/db/mysql":[
+    {
+      title: "MySQL",
+      path: "/tech/db/mysql",
+      prefix: "mysql/",
+      collapsable: false,
+      children: ["mysqldump"],
+    },
+  ],
   "/convention":[
     {
       title: "习惯",
