@@ -6,7 +6,7 @@ const nav = [
   { text: "技术", prefix: "/tech/", items:[
     { text: "后端", link: '', prefix: "back/", items:[
       { text: "Java", link: "java/" },
-      { text: ".Net", link: "dotnet/" },
+      // { text: ".Net", link: "dotnet/" },
       { text: "Maven", link: "maven/" },
       { text: "Spring", link: "spring/" },
       { text: "安全", link: "security/" },
@@ -15,6 +15,9 @@ const nav = [
     ] },
     { text: "数据库", prefix: "db/", items:[
       { text: "MySQL", link: "mysql/", icon: "" },
+    ] },
+    { text: "代码管理", link: '', prefix: "codemgr/", items:[
+      { text: "Git", link: "git/" },
     ] },
     { text: "前端", link: '', prefix: "front/", items:[
       { text: "CSS", link: "css/" },
@@ -40,6 +43,15 @@ const nav = [
 ]
 
 const sidebar = {
+  "/tech/codemgr/git":[
+    {
+      title: "Git",
+      path: "/tech/codemgr/git",
+      prefix: "git/",
+      collapsable: false,
+      children: ["","staging"],
+    },
+  ],
   "/tech/back/java":[
     {
       title: "Java",
