@@ -1,8 +1,8 @@
 ---
-title: 开发工具 IDEA
-category: idea
+title: IDEA
+category: 开发工具
 tag:
-  - 开发工具
+  - idea
 sticky: false
 ---
 

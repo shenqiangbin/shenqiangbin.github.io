@@ -3,7 +3,8 @@ const { config } = require("vuepress-theme-hope");
 const nav = [
   { text: "首页", link: "/", icon: "home" },
   { text: "待做事项", link: "/todo", icon: "note" },
-  { text: "技术", prefix: "/tech/", items:[
+  { text: "Java", link: "/tech/back/java/", icon: "" },
+  { text: "后端技术", prefix: "/tech/", items:[
     { text: "后端", link: '', prefix: "back/", items:[
       { text: "Java", link: "java/" },
       // { text: ".Net", link: "dotnet/" },
@@ -22,7 +23,16 @@ const nav = [
     { text: "大数据", link: '', prefix: "bigdata/", items:[
       { text: "flume", link: "flume/" },
     ] },
-    { text: "前端", link: '', prefix: "front/", items:[
+    { text: "其它", link: '', prefix: "other/", items:[
+      { text: "ftp", link: "centos-ftp/" },
+    ] },
+    { text: "开发工具", prefix: "devtool/", items:[
+      { text: "IDEA", link: "idea/", icon: "" },
+      { text: "vscode", link: "vscode/", icon: "" },
+    ] },
+  ]},
+  { text: "前端技术", prefix: "/tech/", items:[
+    { text: "前端", link: '', prefix: "/front/", items:[
       { text: "CSS", link: "css/" },
       { text: "JavaScript", link: "javascript/" },
       { text: "JQuery", link: "jquery" },
@@ -32,13 +42,8 @@ const nav = [
       { text: "Element", link: "element" },
       { text: "AntDesign", link: "antdesign" },
     ] },
-    { text: "开发工具", prefix: "devtool/", items:[
-      { text: "IDEA", link: "idea/", icon: "" },
-    ] },
   ]},
   { text: "习惯", link: "/convention/", icon: "" },
-  { text: "Java", link: "/tech/back/java/", icon: "" },
-
   // { text: "项目主页", link: "/home/", icon: "home" },
   { text: "关于我", link: "/intro/", icon: "info" },
   { text: "管理", link: "https://sqber-api.vercel.app/ui", icon: "" },
@@ -46,6 +51,15 @@ const nav = [
 ]
 
 const sidebar = {
+  "/tech/other":[
+    {
+      title: "其它",
+      path: "/tech/other",
+      prefix: "other/",
+      collapsable: false,
+      children: ["centos-ftp"],
+    },
+  ],
   "/tech/bigdata/flume":[
     {
       title: "flume",
@@ -116,6 +130,15 @@ const sidebar = {
       prefix: "mysql/",
       collapsable: false,
       children: ["mysqldump"],
+    },
+  ],
+  "/tech/devtool":[
+    {
+      title: "开发工具",
+      path: "/tech/devtool",
+      prefix: "devtool/",
+      collapsable: false,
+      children: ["idea","vscode"],
     },
   ],
   "/convention":[
