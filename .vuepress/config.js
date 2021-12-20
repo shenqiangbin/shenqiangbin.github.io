@@ -12,7 +12,7 @@ const nav = [
       { text: "Spring", link: "spring/" },
       { text: "安全", link: "security/" },
       { text: "Nacos", link: "nacos/" },
-      { text: "工具类", link: "util/" },
+      { text: "工具类", link: "myutil/" },
     ] },
     { text: "数据库", prefix: "db/", items:[
       { text: "MySQL", link: "mysql/", icon: "" },
@@ -105,11 +105,11 @@ const sidebar = {
       children: ["intro"],
     },
   ],
-  "/tech/back/util":[
+  "/tech/back/myutil":[
     {
       title: "工具类",
-      path: "/tech/back/util",
-      prefix: "util/",
+      path: "/tech/back/myutil",
+      prefix: "myutil/",
       collapsable: false,
       children: [ "platform" ],
     },
