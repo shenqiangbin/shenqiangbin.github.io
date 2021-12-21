@@ -3,6 +3,7 @@ const { config } = require("vuepress-theme-hope");
 const nav = [
   { text: "首页", link: "/", icon: "home" },
   { text: "待做事项", link: "/todo", icon: "note" },
+  { text: "软件功能", link: "/tech/myfunction/", icon: "" },
   { text: "Java", link: "/tech/back/java/", icon: "" },
   { text: "后端技术", prefix: "/tech/", items:[
     { text: "后端", link: '', prefix: "back/", items:[

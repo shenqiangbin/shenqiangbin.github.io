@@ -15,7 +15,7 @@ tag:
 导出语句为：
 
 ```sql
-E:\>"D:\mysql-5.7.16-winx64\bin\mysqldump.exe"  -uroot -p --port=3308 --skip-add-drop-table --no-create-info  tpi --tables browselog --where=" BrowseLogID>38" > E:/result.sql
+E:\>"D:\mysql-5.7.16-winx64\bin\mysqldump.exe"  -uroot -p --port=3308 --skip-add-drop-table --no-create-info --skip-tz-utc  tpi --tables browselog --where=" BrowseLogID>38" > E:/result.sql
 ```
 
 分段分析
@@ -25,6 +25,7 @@ E:\>"D:\mysql-5.7.16-winx64\bin\mysqldump.exe"
 -uroot -p --port=3308 
 --skip-add-drop-table   // 不添加 drop 表语句
 --no-create-info       // 不添加 create 表语句
+--skip-tz-utc          // 保证 where 条件中有时间条件时，数据筛选正确
 tpi                   // tpi 库
 --tables browselog    // browselog 表
 --where=" BrowseLogID>38"  // 过滤条件
