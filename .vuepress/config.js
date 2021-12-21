@@ -111,7 +111,7 @@ const sidebar = {
       path: "/tech/back/myutil",
       prefix: "myutil/",
       collapsable: false,
-      children: [ "myplatform" ],
+      children: [ "myplatform", "cmdUtil" ],
     },
   ],
   "/tech/back/maven":[
