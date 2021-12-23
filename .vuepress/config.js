@@ -94,7 +94,7 @@ const sidebar = {
       path: "/tech/back/security",
       prefix: "security/",
       collapsable: false,
-      children: ["interface"],
+      children: ["interface","https"],
     },
   ],
   "/tech/back/nacos":[
