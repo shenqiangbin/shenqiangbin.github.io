@@ -44,6 +44,35 @@ INSERT INTO `browselog` VALUES (39,'5','SA','127.0.0.1',27,'MYPERIOD',2,0,'2021-
 UNLOCK TABLES;
 ```
 
+## mysqldump： Couldn't find table: ">"
+
+使用 Java 程序来执行 mysqldump 命令的时候，使用 > 可能有问题。   
+可能会提示 `mysqldump： Couldn't find table: ">"`   
+使用参数 --result-file 来替换 > 即可。
+
+比如：
+
+`
+String cmd = "mysqldump  -uroot -p123456 --port=3306 --skip-add-drop-table   --no-create-info --skip-tz-utc  personMgr --tables menu  --result-file=/home/sql/result.sql";
+`
+
+```java
+String cmd = "mysqldump  -uroot -p123456 --port=3306 --skip-add-drop-table   --no-create-info --skip-tz-utc  personMgr --tables menu  --result-file=/home/sql/result.sql";
+```
+
+## mysqldump: Can't create/write to file 
+
+具体的错误信息为：
+
+"msg": "mysqldump: [Warning] Using a password on the command line interface can be insecure.mysqldump: Can't create/write to file '\"/home/bigtable/resource/testwj_20211227_151356.sql\"' (OS errno 2 - No such file or directory)"
+
+原因：
+
+这个的原因是 --result-file="/home/sql/result.sql" ，即参数 result-file 的路径加了双引号的缘故。  
+因此去掉双引号即可。
+
+但奇怪的是，如果不是写在程序中，加引号也是可以的，放在程序中，不知为何就报错了。
+
 
 ## 参照
 

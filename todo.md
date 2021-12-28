@@ -59,6 +59,10 @@ https://vercel.com/shenqiangbin/sqber-api/settings/environment-variables
 - VuePress SEO 处理，参考：https://www.sofineday.com/vuepress-seo.html
 
 
+一个项目最基本的功能可能就是能够连接数据库，并能执行一些操作之类的。
+操作数据库的类每个人都有自己的一套写法。有使用传统的 JDBC 的，也有使用封装好的类库的。
+
+
 接口安全设计（相关代码编写）
 
 - 数据访问 - JDBC （将 JdbcTemplate 的相关数据访问功能抽离出公共接口）(事务支持 https://www.cnblogs.com/harrychinese/p/SpringBoot_jdbc_transaction.html)
