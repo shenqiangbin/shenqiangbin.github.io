@@ -60,6 +60,12 @@ String cmd = "mysqldump  -uroot -p123456 --port=3306 --skip-add-drop-table   --n
 String cmd = "mysqldump  -uroot -p123456 --port=3306 --skip-add-drop-table   --no-create-info --skip-tz-utc  personMgr --tables menu  --result-file=/home/sql/result.sql";
 ```
 
+::: danger
+
+**where 条件中不要有空格或其它字符之类的东西，否则在 Java 执行中也会报此错误，目前还不知如何解决。**
+
+:::
+
 ## mysqldump: Can't create/write to file 
 
 具体的错误信息为：
