@@ -12,6 +12,10 @@ prev: false
 next: false
 ---
 
+TODO:
+
+vuepress 中播放音乐资源，视频资源。
+
 ## 建站相关
 
 - 图标替换，还有一些默认 header 中使用的图标
