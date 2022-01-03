@@ -203,10 +203,17 @@ module.exports = config({
   dest: "./dist",
 
   head: [
-    ["script",{ src: "https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" },],
-    ["script",{src: "https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js",},],
-    ["script", { src: "https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js" }],
-    ["script",{ src: "https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js" },],
+    // ["script",{ src: "https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" },],
+    ["script",{ src: "https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js" },],
+
+    // ["script",{src: "https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js",},],
+    ["script",{src: "https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js",},],
+    
+    // ["script", { src: "https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js" }],
+    ["script", { src: "https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.14/vue.min.js" }],
+
+    // ["script",{ src: "https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js" },],
+    ["script",{ src: "https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js" },],
   ],
 
   locales: {
