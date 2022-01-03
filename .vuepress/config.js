@@ -203,6 +203,9 @@ module.exports = config({
   dest: "./dist",
 
   head: [
+    ["meta",{ name: "baidu-site-verification",content: 'code-tF20ewjK6p' }, ],
+
+
     // ["script",{ src: "https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" },],
     ["script",{ src: "https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js" },],
 
