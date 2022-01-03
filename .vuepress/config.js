@@ -379,5 +379,11 @@ module.exports = config({
         ],
       },
     },
+
+    // algolia: {
+    //   apiKey: "<API_KEY>",
+    //   indexName: "<INDEX_NAME>",
+    // },
+
   },
 });

@@ -18,7 +18,7 @@ next: false
 - 全文检索
 
 > 全文检索  
-https://www.algolia.com/
+https://www.algolia.com/ ，（2022-01-03）使用 QQ 邮箱账号已提交申请。
 
 - 内容迁移
 - 导航设定
