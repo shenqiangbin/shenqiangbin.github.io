@@ -162,10 +162,10 @@ const sidebar = {
     },
   ],
   "/": [
-    "",
+    //"",
     // "home",
-    "todo",
-    "intro",
+    //"todo",
+    //"intro",
     // "layout",
     // {
     //   title: "使用",
