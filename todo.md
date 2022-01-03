@@ -20,8 +20,8 @@ next: false
 > 全文检索  
 https://www.algolia.com/ ，（2022-01-03）使用 QQ 邮箱账号已提交申请。
 
-- 内容迁移
-- 导航设定
+-  ✅ 内容迁移
+-  ✅ 导航设定
 -  ✅ 评论配置
 
 > 评论支持邮件消息，参照下面的指导：  
@@ -31,8 +31,6 @@ https://vercel.com/shenqiangbin/sqber-api/settings/environment-variables
 有评论并不会收到邮件，只是你回复别人，会给别人发送邮件。
 
 - 推送到百度，chrome 等站点
-
-- 整理好分类，按分类来，编码后期改动，导致链接不能使用的情况。
 
 ## 其它
 
