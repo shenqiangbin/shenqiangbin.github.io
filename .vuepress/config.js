@@ -158,7 +158,7 @@ const sidebar = {
       path: "/tech/myfunction",
       prefix: "myfunction/",
       collapsable: false,
-      children: ["unifiedReturnObject","uploadFile","importData","exportData"],
+      children: ["unifiedReturnObject","unifiedException","uploadFile","importData","exportData"],
     },
   ],
   "/convention":[
