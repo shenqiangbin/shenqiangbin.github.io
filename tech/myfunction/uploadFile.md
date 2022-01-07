@@ -72,7 +72,7 @@ public R fileImport(HttpServletRequest request) throws Exception {
 
 ::: info 说明
 
-关于代码中的 `R` 请参照 [统一返回类](/)
+关于代码中的 `R` 请参照 [统一返回对象](/tech/myfunction/unifiedReturnObject)
 
 :::
 
@@ -85,7 +85,7 @@ public R fileImport(HttpServletRequest request) throws Exception {
 
 ::: info 说明
 
-项目基于的 [统一返回类](/) 和 [统一异常捕捉](/) 也在此次提交中。
+项目基于的 [统一返回对象](/tech/myfunction/unifiedReturnObject) 和 [统一异常捕捉](/) 也在此次提交中。
 
 :::
 
