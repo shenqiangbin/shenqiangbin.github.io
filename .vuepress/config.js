@@ -152,6 +152,15 @@ const sidebar = {
       children: ["idea","vscode"],
     },
   ],
+  "/tech/myfunction":[
+    {
+      title: "软件功能",
+      path: "/tech/myfunction",
+      prefix: "myfunction/",
+      collapsable: false,
+      children: ["uploadFile","importData","exportData"],
+    },
+  ],
   "/convention":[
     {
       title: "习惯",
