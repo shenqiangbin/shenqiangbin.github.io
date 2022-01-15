@@ -38,6 +38,8 @@ CREATE TABLE `resource` (
 针对资源表，需要做一个分页查询功能。能够根据【名称】和【资源类型】进行查询。
 
 
+### 分页查询逻辑图
+
 分页查询无非就这样一个流程。
 
 <img src='/assets/tech/page-query-flow.png'></img>
@@ -71,6 +73,16 @@ public class PageModel<T> {
 这三种实体一般会建立专门的目录进行存储。
 
 在数据库对象转化成返回结果对象的过程中，只是相同属性的赋值，因此这里也会抽离出一个 `MyBeanUtil` 对象。
+
+而在属性值转对应描述的过程中，有的属性就是一个枚举值，这可能就需要用到一个公用的枚举方法。  
+有的属性是另一个表的 id 信息，这可能就需要根据 id 集合查询数据库后，再获取对应的描述。  
+当然，`数据库查询时，通过 join 直接连表查询也可以解决，如果数据库层面直接转化了，这里也就不需要处理了。`
+
+### 分页查询逻辑图升级版
+
+包含公共内容的分页查询逻辑图：
+
+<img src='/assets/tech/page-query-flow-upgrade.png'></img>
 
 示例代码见：  
 [https://github.com/shenqiangbin/sqber-demo/blob/master/spring-db-demo/src/main/java/com/sqber/dbdemo/controller/ResourceController.java](https://github.com/shenqiangbin/sqber-demo/blob/master/spring-db-demo/src/main/java/com/sqber/dbdemo/controller/ResourceController.java)

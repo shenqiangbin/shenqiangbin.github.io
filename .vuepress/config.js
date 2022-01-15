@@ -249,7 +249,7 @@ module.exports = config({
     darkmode: 'switch',
     themeColor: false,
 
-    sidebarDepth: 4,
+    //sidebarDepth: 4,
 
     sitemap: true,
     copyright: true,
@@ -257,7 +257,6 @@ module.exports = config({
     nav: nav,
 
     sidebar: sidebar,
-    displayAllHeaders: false,
 
     // locales: {
     //   "/zh/": {
