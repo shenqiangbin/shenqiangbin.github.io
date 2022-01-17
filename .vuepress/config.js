@@ -159,7 +159,7 @@ const sidebar = {
       prefix: "myfunction/",
       collapsable: false,
       children: ["unifiedReturnObject","unifiedException","validation","database","queryData",
-      "uploadFile","importData","exportData","login"],
+      "addData","uploadFile","importData","exportData","login"],
     },
   ],
   "/convention":[
