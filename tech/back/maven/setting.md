@@ -1,5 +1,5 @@
 ---
-title: Maven 配置
+title: settings 配置
 # 一个页面只能有一个分类
 category: 项目构建
 # 一个页面可以有多个标签
@@ -79,6 +79,11 @@ Mac 下使用快捷键 `Shift+Command+.` 可以显示隐藏目录。
 	</profiles>
 </settings>
 ```
+
+下面是一个比较全面的配置，包含了［本地仓库设置］、［私有仓库设置］以及［仓库镜像］设置。
+
+　　
+［仓库镜像］设置就是解决加载慢的问题。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -280,10 +285,14 @@ Mac 下使用快捷键 `Shift+Command+.` 可以显示隐藏目录。
     </profile>
     -->
 
+    <!-- 文档（文档下可以设置自定义仓库） -->
     <profile>
 		
+      <!-- 文档的唯一标识，下面的[激活文档]配置会使用到。 -->
     	<id>test</id>
       <repositories>
+
+        <!-- 下面定义了 3 个自定义仓库 -->
         <repository>
           <id>codehausSnapshots</id>
           <name>Codehaus Snapshots</name>
@@ -297,6 +306,7 @@ Mac 下使用快捷键 `Shift+Command+.` 可以显示隐藏目录。
             <updatePolicy>never</updatePolicy>
             <checksumPolicy>fail</checksumPolicy>
           </snapshots>
+          <!-- 自定义仓库地址 -->
           <url>http://10.120.150.159:8081/repository/cnki-public/</url>
           <layout>default</layout>
         </repository>
@@ -344,6 +354,7 @@ Mac 下使用快捷键 `Shift+Command+.` 可以显示隐藏目录。
    |
   -->
 
+  <!-- 要激活的文档，这里使用上面的文档　id -->
   <activeProfiles>
     <activeProfile>test</activeProfile>
   </activeProfiles>
@@ -352,3 +363,30 @@ Mac 下使用快捷键 `Shift+Command+.` 可以显示隐藏目录。
 
 ```
 
+### 在项目中配置仓库地址
+
+在　pom.xml　中添加如下配置
+
+```xml
+<project>
+
+  .....
+
+  <repositories>
+    <repository>
+      <id>company-repo</id>
+      <url>http://10.120.150.159:8081/repository/cnki-releases/</url>
+    </repository>
+    <repository>
+      <id>ali-repo</id>
+      <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+    </repository>
+    <repository>
+      <id>company-repo2</id>
+      <url>http://10.120.150.159:8081/repository/cnki-public/</url>
+    </repository>
+  </repositories>
+
+</project>
+
+```
