@@ -14,6 +14,7 @@ const nav = [
       { text: "安全", link: "security/" },
       { text: "Nacos", link: "nacos/" },
       { text: "工具类", link: "myutil/" },
+      { text: "ElasticSearch", link: "es/" },
     ] },
     { text: "数据库", prefix: "db/", items:[
       { text: "MySQL", link: "mysql/", icon: "" },
@@ -86,7 +87,17 @@ const sidebar = {
       path: "/tech/back/java",
       prefix: "java/",
       collapsable: false,
-      children: ["log4j2-problem"],
+      children: ["log4j2-problem","csv-handle","threadlocal"],
+    },
+  ],
+  "/tech/back/es":[
+    {
+      title: "ElasticSearch",
+      path: "/tech/back/es",
+      prefix: "es/",
+      collapsable: false,
+      children: ["mac-es-install","win-es-install","linux-es-install","config",
+      "visual","query"],
     },
   ],
   "/tech/back/security":[
