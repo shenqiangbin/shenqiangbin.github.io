@@ -12,6 +12,10 @@ sidebarDepth: 4
 
 <a target='_blank' href='/assets/life/lingerdingdang.mp4'>铃儿响叮当 - 动画</a>
 
+## 小动物
+
+<img src='/assets/life/animals.jpeg'></img>
+
 ## 孩子-健康
 
 ### 感冒
