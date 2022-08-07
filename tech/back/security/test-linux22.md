@@ -64,7 +64,7 @@ ssh -p23 root@192.168.3.18
 
 假如要把 22 端口修改成 1032 端口，那么在 Port 22 下面加上 Port 1032 端口，先临时保留 22 端口。
 
-编辑配置文件命令：`vi /etc/ssh/sshd_config`
+编辑配置文件命令：`vi /etc/ssh/sshd_config`，修改成如下内容。
 
 ```bash
 # If you want to change the port on a SELinux system, you have to tell
