@@ -106,7 +106,12 @@ const sidebar = {
       path: "/tech/back/security",
       prefix: "security/",
       collapsable: false,
-      children: ["interface","https"],
+      children: ["interface", "https",
+      {
+        title: "安全评测",
+        collapsable: false,
+        children: ["test-linux22"],
+      }],
     },
   ],
   "/tech/back/nacos":[
