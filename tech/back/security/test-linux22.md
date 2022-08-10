@@ -77,6 +77,8 @@ Port 1032
 ## 关闭 SELinux 防火墙 
 
 关闭 SELinux 防火墙，否则重启 sshd 服务时，会提示权限被拒绝。  
+一定要永久关闭 SELinux 防火墙，否则服务器重启后，因端口未开放会无法连接上服务器。
+修改文件：`/etc/sysconfig/selinux`  改为 disable。
 临时关闭命令： `setenforce 0`。
 
 报错信息如下：
@@ -140,3 +142,47 @@ ssh -p1032 root@192.168.3.18
 重新编辑 `/etc/ssh/sshd_config` 文件，注释 22 端口。
 
 重启 sshd 服务。
+
+
+## 【一键脚本】
+
+在了解基本的操作流程后，我们可以将处理过程写成一个脚本。复制以下代码到一个 sh 脚本，执行即可。
+
+```bash
+#!/bin/bash
+# 一键修改 22 默认端口
+
+echo -e "建议永久关闭 SELinux\n"
+setenforce 0
+
+# 新端口为 1032 端口
+newPortNum=1032
+newPort='Port 22\nPort ${newPortNum}'
+echo -e "查看/etc/ssh/sshd_config端口配置信息\n"
+
+a=`grep "Port 22" /etc/ssh/sshd_config`
+echo "result is: $a"
+
+echo -e "打开22端口，添加一个新端口\n"
+echo "sed -i 's/$a/$newPort/' /etc/ssh/sshd_config"
+sed -i "s/$a/$newPort/" /etc/ssh/sshd_config
+
+echo -e "查看处理结果\n"
+b=`grep -n "Port" /etc/ssh/sshd_config`
+echo -e "result is:\n$b"
+
+echo -e "重启 sshd 服务\n"
+systemctl restart sshd
+
+echo -e "重启 firewalld 服务\n"
+systemctl restart firewalld
+
+echo -e "防火墙开放端口 ${newPortNum} \n"
+firewall-cmd --zone=public --permanent --add-port=${newPortNum}/tcp
+
+echo -e "重启 firewalld 服务\n"
+systemctl restart firewalld
+
+echo -e "查看已经开放的端口 \n "
+firewall-cmd --zone=public --list-ports
+```
