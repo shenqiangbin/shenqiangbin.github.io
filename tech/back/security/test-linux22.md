@@ -74,6 +74,33 @@ Port 22
 Port 1032
 ```
 
+## 关闭 SELinux 防火墙 
+
+关闭 SELinux 防火墙，否则重启 sshd 服务时，会提示权限被拒绝。  
+临时关闭命令： `setenforce 0`。
+
+报错信息如下：
+```bash {14-15}
+[root@114localhost ssh]# systemctl status sshd
+● sshd.service - OpenSSH server daemon
+   Loaded: loaded (/usr/lib/systemd/system/sshd.service; enabled; vendor preset: enabled)
+   Active: active (running) since 一 2022-08-08 09:39:17 CST; 35s ago
+     Docs: man:sshd(8)
+           man:sshd_config(5)
+ Main PID: 1917 (sshd)
+   CGroup: /system.slice/sshd.service
+           └─1917 /usr/sbin/sshd -D
+
+localdomain systemd[1]: Stopping OpenSSH server daemon...
+localdomain systemd[1]: Stopped OpenSSH server daemon.
+localdomain systemd[1]: Starting OpenSSH server daemon...
+localdomain sshd[1917]: error: Bind to port 1032 on 0.0.0.0 failed: Permission denied.
+localdomain sshd[1917]: error: Bind to port 1032 on :: failed: Permission denied.
+localdomain sshd[1917]: Server listening on 0.0.0.0 port 22.
+localdomain sshd[1917]: Server listening on :: port 22.
+localdomain systemd[1]: Started OpenSSH server daemon.
+```
+
 ## 重启 sshd 服务
 
 配置文件修改之后，重启 sshd 服务即可。
