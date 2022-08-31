@@ -1,193 +1,257 @@
-const { config } = require("vuepress-theme-hope");
+const { config } = require('vuepress-theme-hope')
 
 const nav = [
-  { text: "首页", link: "/", icon: "home" },
-  { text: "待做事项", link: "/todo", icon: "note" },
-  { text: "软件功能", link: "/tech/myfunction/", icon: "" },
-  { text: "Java", link: "/tech/back/java/", icon: "" },
-  { text: "后端技术", prefix: "/tech/", items:[
-    { text: "后端", link: '', prefix: "back/", items:[
-      { text: "Java", link: "java/" },
-      // { text: ".Net", link: "dotnet/" },
-      { text: "Maven", link: "maven/" },
-      { text: "Spring", link: "spring/" },
-      { text: "安全", link: "security/" },
-      { text: "Nacos", link: "nacos/" },
-      { text: "工具类", link: "myutil/" },
-      { text: "ElasticSearch", link: "es/" },
-    ] },
-    { text: "数据库", prefix: "db/", items:[
-      { text: "MySQL", link: "mysql/", icon: "" },
-    ] },
-    { text: "代码管理", link: '', prefix: "codemgr/", items:[
-      { text: "Git", link: "git/" },
-    ] },
-    { text: "大数据", link: '', prefix: "bigdata/", items:[
-      { text: "flume", link: "flume/" },
-    ] },
-    { text: "其它", link: '', prefix: "other/", items:[
-      { text: "ftp", link: "centos-ftp/" },
-    ] },
-    { text: "开发工具", prefix: "devtool/", items:[
-      { text: "IDEA", link: "idea/", icon: "" },
-      { text: "vscode", link: "vscode/", icon: "" },
-    ] },
-  ]},
-  { text: "前端技术", prefix: "/tech/", items:[
-    { text: "前端", link: '', prefix: "/front/", items:[
-      { text: "CSS", link: "css/" },
-      { text: "JavaScript", link: "javascript/" },
-      { text: "JQuery", link: "jquery" },
-      { text: "NPM", link: "npm" },
-      { text: "Yarn", link: "yarn" },
-      { text: "Vue", link: "vue" },
-      { text: "Element", link: "element" },
-      { text: "AntDesign", link: "antdesign" },
-    ] },
-  ]},
-  { text: "习惯", link: "/convention/", icon: "" },
+  { text: '首页', link: '/', icon: 'home' },
+  { text: '待做事项', link: '/todo', icon: 'note' },
+  { text: '软件功能', link: '/tech/myfunction/', icon: '' },
+  { text: 'Java', link: '/tech/back/java/', icon: '' },
+  {
+    text: '后端技术',
+    prefix: '/tech/',
+    items: [
+      {
+        text: '后端',
+        link: '',
+        prefix: 'back/',
+        items: [
+          { text: 'Java', link: 'java/' },
+          // { text: ".Net", link: "dotnet/" },
+          { text: 'Maven', link: 'maven/' },
+          { text: 'Spring', link: 'spring/' },
+          { text: '安全', link: 'security/' },
+          { text: 'Nacos', link: 'nacos/' },
+          { text: '工具类', link: 'myutil/' },
+          { text: 'ElasticSearch', link: 'es/' },
+          { text: 'K8S', link: 'k8s/' },
+        ],
+      },
+      {
+        text: '数据库',
+        prefix: 'db/',
+        items: [{ text: 'MySQL', link: 'mysql/', icon: '' }],
+      },
+      {
+        text: '代码管理',
+        link: '',
+        prefix: 'codemgr/',
+        items: [{ text: 'Git', link: 'git/' }],
+      },
+      {
+        text: '大数据',
+        link: '',
+        prefix: 'bigdata/',
+        items: [{ text: 'flume', link: 'flume/' }],
+      },
+      {
+        text: '其它',
+        link: '',
+        prefix: 'other/',
+        items: [{ text: 'ftp', link: 'centos-ftp/' }],
+      },
+      {
+        text: '开发工具',
+        prefix: 'devtool/',
+        items: [
+          { text: 'IDEA', link: 'idea/', icon: '' },
+          { text: 'vscode', link: 'vscode/', icon: '' },
+        ],
+      },
+    ],
+  },
+  {
+    text: '前端技术',
+    prefix: '/tech/',
+    items: [
+      {
+        text: '前端',
+        link: '',
+        prefix: '/front/',
+        items: [
+          { text: 'CSS', link: 'css/' },
+          { text: 'JavaScript', link: 'javascript/' },
+          { text: 'JQuery', link: 'jquery' },
+          { text: 'NPM', link: 'npm' },
+          { text: 'Yarn', link: 'yarn' },
+          { text: 'Vue', link: 'vue' },
+          { text: 'Element', link: 'element' },
+          { text: 'AntDesign', link: 'antdesign' },
+        ],
+      },
+    ],
+  },
+  { text: '习惯', link: '/convention/', icon: '' },
   // { text: "项目主页", link: "/home/", icon: "home" },
-  { text: "关于我", link: "/intro/", icon: "info" },
-  { text: "生活", link: "/life/", icon: "life" },
-  { text: "管理", link: "https://sqber-api.vercel.app/ui", icon: "" },
+  { text: '关于我', link: '/intro/', icon: 'info' },
+  { text: '生活', link: '/life/', icon: 'life' },
+  { text: '管理', link: 'https://sqber-api.vercel.app/ui', icon: '' },
   // { text: "文档", link: "https://vuepress-theme-hope.github.io/", icon: "note" },
 ]
 
 const sidebar = {
-  "/tech/other":[
+  '/tech/other': [
     {
-      title: "其它",
-      path: "/tech/other",
-      prefix: "other/",
+      title: '其它',
+      path: '/tech/other',
+      prefix: 'other/',
       collapsable: false,
-      children: ["centos-ftp"],
+      children: ['centos-ftp'],
     },
   ],
-  "/tech/bigdata/flume":[
+  '/tech/bigdata/flume': [
     {
-      title: "flume",
-      path: "/tech/bigdata/flume",
-      prefix: "flume/",
+      title: 'flume',
+      path: '/tech/bigdata/flume',
+      prefix: 'flume/',
       collapsable: false,
-      children: ["","intro","install","ftp2hdfs"],
+      children: ['', 'intro', 'install', 'ftp2hdfs'],
     },
   ],
-  "/tech/codemgr/git":[
+  '/tech/codemgr/git': [
     {
-      title: "Git",
-      path: "/tech/codemgr/git",
-      prefix: "git/",
+      title: 'Git',
+      path: '/tech/codemgr/git',
+      prefix: 'git/',
       collapsable: false,
-      children: ["","staging"],
+      children: ['', 'staging'],
     },
   ],
-  "/tech/back/java":[
+  '/tech/back/java': [
     {
-      title: "Java",
-      path: "/tech/back/java",
-      prefix: "java/",
+      title: 'Java',
+      path: '/tech/back/java',
+      prefix: 'java/',
       collapsable: false,
-      children: ["log4j2-problem","csv-handle","threadlocal"],
+      children: ['log4j2-problem', 'csv-handle', 'threadlocal'],
     },
   ],
-  "/tech/back/es":[
+  '/tech/back/es': [
     {
-      title: "ElasticSearch",
-      path: "/tech/back/es",
-      prefix: "es/",
+      title: 'ElasticSearch',
+      path: '/tech/back/es',
+      prefix: 'es/',
       collapsable: false,
-      children: ["mac-es-install","win-es-install","linux-es-install","config",
-      "visual","query"],
+      children: [
+        'mac-es-install',
+        'win-es-install',
+        'linux-es-install',
+        'config',
+        'visual',
+        'query',
+      ],
     },
   ],
-  "/tech/back/security":[
+  '/tech/back/security': [
     {
-      title: "安全",
-      path: "/tech/back/security",
-      prefix: "security/",
+      title: '安全',
+      path: '/tech/back/security',
+      prefix: 'security/',
       collapsable: false,
-      children: ["interface", "https",
-      {
-        title: "安全评测",
-        collapsable: false,
-        children: ["test-linux22"],
-      }],
+      children: [
+        'interface',
+        'https',
+        {
+          title: '安全评测',
+          collapsable: false,
+          children: ['test-linux22'],
+        },
+      ],
     },
   ],
-  "/tech/back/nacos":[
+  '/tech/back/nacos': [
     {
-      title: "Nacos",
-      path: "/tech/back/nacos",
-      prefix: "nacos/",
+      title: 'Nacos',
+      path: '/tech/back/nacos',
+      prefix: 'nacos/',
       collapsable: false,
-      children: ["intro"],
+      children: ['intro'],
     },
   ],
-  "/tech/back/myutil":[
+  '/tech/back/myutil': [
     {
-      title: "工具类",
-      path: "/tech/back/myutil",
-      prefix: "myutil/",
+      title: '工具类',
+      path: '/tech/back/myutil',
+      prefix: 'myutil/',
       collapsable: false,
-      children: [ "myplatform", "cmdUtil" ],
+      children: ['myplatform', 'cmdUtil'],
     },
   ],
-  "/tech/back/maven":[
+  '/tech/back/k8s': [
     {
-      title: "Maven",
-      path: "/tech/back/maven",
-      prefix: "maven/",
+      title: 'k8s',
+      path: '/tech/back/k8s',
+      prefix: 'k8s/',
       collapsable: false,
-      children: [ "setting", "create-project"],
+      children: ['install', 'common-cmd'],
     },
   ],
-  "/tech/back/spring":[
+  '/tech/back/maven': [
     {
-      title: "Spring",
-      path: "/tech/back/spring",
-      prefix: "spring/",
+      title: 'Maven',
+      path: '/tech/back/maven',
+      prefix: 'maven/',
       collapsable: false,
-      children: ["jdbcTemplate"],
+      children: ['setting', 'create-project'],
     },
   ],
-  "/tech/db/mysql":[
+  '/tech/back/spring': [
     {
-      title: "MySQL",
-      path: "/tech/db/mysql",
-      prefix: "mysql/",
+      title: 'Spring',
+      path: '/tech/back/spring',
+      prefix: 'spring/',
       collapsable: false,
-      children: ["mysqldump"],
+      children: ['jdbcTemplate'],
     },
   ],
-  "/tech/devtool":[
+  '/tech/db/mysql': [
     {
-      title: "开发工具",
-      path: "/tech/devtool",
-      prefix: "devtool/",
+      title: 'MySQL',
+      path: '/tech/db/mysql',
+      prefix: 'mysql/',
       collapsable: false,
-      children: ["idea","vscode"],
+      children: ['mysqldump'],
     },
   ],
-  "/tech/myfunction":[
+  '/tech/devtool': [
     {
-      title: "软件功能",
-      path: "/tech/myfunction",
-      prefix: "myfunction/",
+      title: '开发工具',
+      path: '/tech/devtool',
+      prefix: 'devtool/',
       collapsable: false,
-      children: ["unifiedReturnObject","unifiedException","validation","database","queryData",
-      "addData","saveData","removeData","uploadFile","importData","exportData","login"],
+      children: ['idea', 'vscode'],
     },
   ],
-  "/convention":[
+  '/tech/myfunction': [
     {
-      title: "习惯",
-      path: "convention/",
-      prefix: "convention/",
+      title: '软件功能',
+      path: '/tech/myfunction',
+      prefix: 'myfunction/',
       collapsable: false,
-      children: ["log", "simpleCode"],
+      children: [
+        'unifiedReturnObject',
+        'unifiedException',
+        'validation',
+        'database',
+        'queryData',
+        'addData',
+        'saveData',
+        'removeData',
+        'uploadFile',
+        'importData',
+        'exportData',
+        'login',
+      ],
     },
   ],
-  "/": [
+  '/convention': [
+    {
+      title: '习惯',
+      path: 'convention/',
+      prefix: 'convention/',
+      collapsable: false,
+      children: ['log', 'simpleCode'],
+    },
+  ],
+  '/': [
     //"",
     // "home",
     //"todo",
@@ -200,54 +264,72 @@ const sidebar = {
     //   children: ["", "page", "markdown", "disable", "encrypt"],
     // },
   ],
-  "":[
+  '': [
     {
-      title: "布局",
-      icon: "layout",
-      prefix: "layout/",
+      title: '布局',
+      icon: 'layout',
+      prefix: 'layout/',
       collapsable: false,
       children: [
-        "sidebar",
-        "sidebar",
+        'sidebar',
+        'sidebar',
         {
-          title: "页面",
-          icon: "page",
+          title: '页面',
+          icon: 'page',
           collapsable: false,
-          children: ["page", "breadcrumb", "footer"],
+          children: ['page', 'breadcrumb', 'footer'],
         },
-        "home",
-        "slides",
+        'home',
+        'slides',
       ],
-    }
-  ]
+    },
+  ],
 }
 
 module.exports = config({
-  title: "SQBER",
-  description: "个人站点，记录个人生活和相关技术文档，比如 Java、Spring、Linux、代码管理等内容",
+  title: 'SQBER',
+  description:
+    '个人站点，记录个人生活和相关技术文档，比如 Java、Spring、Linux、代码管理等内容',
 
-  dest: "./dist",
+  dest: './dist',
 
   head: [
-    ["meta",{ name: "baidu-site-verification",content: 'code-tF20ewjK6p' }, ],
-
+    ['meta', { name: 'baidu-site-verification', content: 'code-tF20ewjK6p' }],
 
     // ["script",{ src: "https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" },],
-    ["script",{ src: "https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js" },],
+    [
+      'script',
+      {
+        src: 'https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js',
+      },
+    ],
 
     // ["script",{src: "https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js",},],
-    ["script",{src: "https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js",},],
-    
+    [
+      'script',
+      {
+        src: 'https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js',
+      },
+    ],
+
     // ["script", { src: "https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js" }],
-    ["script", { src: "https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.14/vue.min.js" }],
+    [
+      'script',
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.14/vue.min.js' },
+    ],
 
     // ["script",{ src: "https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js" },],
-    ["script",{ src: "https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js" },],
+    [
+      'script',
+      {
+        src: 'https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js',
+      },
+    ],
   ],
 
   locales: {
-    "/": {
-      lang: "zh-CN",
+    '/': {
+      lang: 'zh-CN',
     },
     // "/zh/": {
     //   title: "Theme Demo",
@@ -256,11 +338,11 @@ module.exports = config({
   },
 
   themeConfig: {
-    logo: "/logo.png",
-    hostname: "https://shenqiangbin.github.io/",
+    logo: '/logo.png',
+    hostname: 'https://shenqiangbin.github.io/',
 
-    author: "sqber",
-    repo: "https://github.com/shenqiangbin/",
+    author: 'sqber',
+    repo: 'https://github.com/shenqiangbin/',
 
     darkmode: 'switch',
     themeColor: false,
@@ -308,102 +390,103 @@ module.exports = config({
     // },
 
     blog: {
-      intro: "/intro/",
-      sidebarDisplay: "mobile",
-      links: {       
-        Github: "https://github.com/shenqiangbin/",
-        QQ: 'http://wpa.qq.com/msgrd?v=3&uin=1969858717&site=qq&menu=yes'
+      intro: '/intro/',
+      sidebarDisplay: 'mobile',
+      links: {
+        Github: 'https://github.com/shenqiangbin/',
+        QQ: 'http://wpa.qq.com/msgrd?v=3&uin=1969858717&site=qq&menu=yes',
       },
     },
     footer: {
       display: true,
-      content: "冀-ICP备 17029815",
-      copyright: 'Copyright © 2017-present SQBER 本文版权归作者所有，欢迎转载，但未经作者同意必须保留此段声明，且在文章页面明显位置给出原文连接，否则保留追究法律责任的权利'
+      content: '冀-ICP备 17029815',
+      copyright:
+        'Copyright © 2017-present SQBER 本文版权归作者所有，欢迎转载，但未经作者同意必须保留此段声明，且在文章页面明显位置给出原文连接，否则保留追究法律责任的权利',
     },
 
     comment: {
-      type: "waline",
-      serverURL: "https://sqber-api.vercel.app/",
-      meta: ['nick', 'mail', 'link']
+      type: 'waline',
+      serverURL: 'https://sqber-api.vercel.app/',
+      meta: ['nick', 'mail', 'link'],
     },
 
     copyright: {
-      status: "global",
+      status: 'global',
     },
 
     git: {
-      timezone: "Asia/Shanghai",
+      timezone: 'Asia/Shanghai',
     },
 
     mdEnhance: {
       enableAll: true,
       presentation: {
         plugins: [
-          "highlight",
-          "math",
-          "search",
-          "notes",
-          "zoom",
-          "anything",
-          "audio",
-          "chalkboard",
+          'highlight',
+          'math',
+          'search',
+          'notes',
+          'zoom',
+          'anything',
+          'audio',
+          'chalkboard',
         ],
       },
     },
 
     pwa: {
-      favicon: "/favicon.ico",
+      favicon: '/favicon.ico',
       cachePic: true,
       apple: {
-        icon: "/assets/icon/apple-icon-152.png",
-        statusBarColor: "black",
+        icon: '/assets/icon/apple-icon-152.png',
+        statusBarColor: 'black',
       },
       msTile: {
-        image: "/assets/icon/ms-icon-144.png",
-        color: "#ffffff",
+        image: '/assets/icon/ms-icon-144.png',
+        color: '#ffffff',
       },
       manifest: {
         icons: [
           {
-            src: "/assets/icon/chrome-mask-512.png",
-            sizes: "512x512",
-            purpose: "maskable",
-            type: "image/png",
+            src: '/assets/icon/chrome-mask-512.png',
+            sizes: '512x512',
+            purpose: 'maskable',
+            type: 'image/png',
           },
           {
-            src: "/assets/icon/chrome-mask-192.png",
-            sizes: "192x192",
-            purpose: "maskable",
-            type: "image/png",
+            src: '/assets/icon/chrome-mask-192.png',
+            sizes: '192x192',
+            purpose: 'maskable',
+            type: 'image/png',
           },
           {
-            src: "/assets/icon/chrome-512.png",
-            sizes: "512x512",
-            type: "image/png",
+            src: '/assets/icon/chrome-512.png',
+            sizes: '512x512',
+            type: 'image/png',
           },
           {
-            src: "/assets/icon/chrome-192.png",
-            sizes: "192x192",
-            type: "image/png",
+            src: '/assets/icon/chrome-192.png',
+            sizes: '192x192',
+            type: 'image/png',
           },
         ],
         shortcuts: [
           {
-            name: "Guide",
-            short_name: "Guide",
-            url: "/guide/",
+            name: 'Guide',
+            short_name: 'Guide',
+            url: '/guide/',
             icons: [
               {
-                src: "/assets/icon/guide-maskable.png",
-                sizes: "192x192",
-                purpose: "maskable",
-                type: "image/png",
+                src: '/assets/icon/guide-maskable.png',
+                sizes: '192x192',
+                purpose: 'maskable',
+                type: 'image/png',
               },
               {
-                src: "/assets/icon/guide-monochrome.png",
-                sizes: "192x192",
-                purpose: "monochrome",
-                type: "image/png",
+                src: '/assets/icon/guide-monochrome.png',
+                sizes: '192x192',
+                purpose: 'monochrome',
+                type: 'image/png',
               },
             ],
           },
@@ -415,6 +498,5 @@ module.exports = config({
     //   apiKey: "<API_KEY>",
     //   indexName: "<INDEX_NAME>",
     // },
-
   },
-});
+})
