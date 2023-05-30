@@ -19,7 +19,7 @@ docker-compose 可以运行一系列的服务，服务定义在 docker-compose.y
 
 ### 安装
 ```
-curl -L https://get.daocloud.io/docker/compose/releases/download/v2.11.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose 
+curl -L https://github.com/docker/compose/releases/download/v2.18.1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose 
 
 chmod +x /usr/local/bin/docker-compose
 ```
@@ -31,7 +31,7 @@ chmod +x /usr/local/bin/docker-compose
 
 失败一般是由于无法下载文件导致的，我们可以先解析到文件网址，然后通过迅雷下载。  
 我解析到的地址为：  
-https://github.com/docker/compose/releases/download/1.27.4/docker-compose-Linux-x86_64
+https://github.com/docker/compose/releases/download/v2.18.1/docker-compose-Linux-x86_64
 
 
 ### 查看版本
