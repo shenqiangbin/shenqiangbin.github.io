@@ -22,6 +22,7 @@ const nav = [
           { text: 'Nacos', link: 'nacos/' },
           { text: '工具类', link: 'myutil/' },
           { text: 'ElasticSearch', link: 'es/' },
+          { text: 'Docker', link: 'docker/' },
           { text: 'K8S', link: 'k8s/' },
         ],
       },
@@ -175,13 +176,22 @@ const sidebar = {
       children: ['myplatform', 'cmdUtil'],
     },
   ],
+  '/tech/back/docker': [
+    {
+      title: 'docker',
+      path: '/tech/back/docker',
+      prefix: 'docker/',
+      collapsable: false,
+      children: ['install', 'docker-compose'],
+    },
+  ],
   '/tech/back/k8s': [
     {
       title: 'k8s',
       path: '/tech/back/k8s',
       prefix: 'k8s/',
       collapsable: false,
-      children: ['install', 'common-cmd'],
+      children: ['install', 'common-cmd', 'harbor-install'],
     },
   ],
   '/tech/back/maven': [
